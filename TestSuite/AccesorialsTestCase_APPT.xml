@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="72fc3753-a310-4537-a90f-9a509f5fd61e" discardOkResults="false" failOnError="false" failTestCaseOnErrors="false" keepSession="false" name="AccesorialsTestCase_APPT" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="70c6511d-24f1-4fd7-8408-b259de0f8cbffileName">AccesorialsTestCase</con:setting><con:setting id="72fc3753-a310-4537-a90f-9a509f5fd61efileName">AccesorialsTestCase_APPT</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Authentication" id="5c40898e-52f2-405b-8d75-5811fd8bbf1c"><con:settings/><con:config service="REST Service 5" resourcePath="/webapps/security-spa/api/security/authenticate" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authentication" id="eb90dad0-674b-44b3-bf33-7a9456c529b9" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://javatest.test.com:4035</con:endpoint><con:request>username=test\dccBatch&amp;password=test</con:request><con:originalUri>https://javatest.test.com/webapps/security-spa/api/security/authenticate</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="datasource" name="SpreadSheet" id="82d3fb63-a5de-4553-ab38-7ca6e5e0e17c"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>TestData/1APPTBill ShipmentsSITA03192018TEM.xlsx</file><worksheet>Main</worksheet><cell>A4</cell><ignoreEmpty>false</ignoreEmpty><evaluateFormulas>false</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>PRO</con:property><con:property>Status</con:property><con:property>PU Date</con:property><con:property>Type</con:property><con:property>Origin</con:property><con:property>Trailer Scac</con:property><con:property>Trailer</con:property><con:property>Shipper- Name</con:property><con:property>Shipper- Str#</con:property><con:property>Shipper- Phone #</con:property><con:property>Shipper- Number</con:property><con:property>Shipper- Dir1</con:property><con:property>Shipper- Street</con:property><con:property>Shipper- Suf</con:property><con:property>Shipper- Dir2</con:property><con:property>Shipper- Unit</con:property><con:property>Shipper- Type</con:property><con:property>Shipper- City</con:property><con:property>Shipper- State</con:property><con:property>Shipper- Zip</con:property><con:property>Consignee- Name</con:property><con:property>Consignee- Str#</con:property><con:property>Consignee- Phone #</con:property><con:property>Consignee- C/O</con:property><con:property>Consignee- Show</con:property><con:property>Consignee- Booth#</con:property><con:property>Consignee- Number</con:property><con:property>Consignee- Dir1</con:property><con:property>Consignee- Street</con:property><con:property>Consignee- Suf</con:property><con:property>Consignee- Dir2</con:property><con:property>Consignee- Unit</con:property><con:property>Consignee- Type</con:property><con:property>Consignee- City</con:property><con:property>Consignee- State</con:property><con:property>Consignee- Zip</con:property><con:property>Terms</con:property><con:property>GSV</con:property><con:property>NTFY</con:property><con:property>HOMD</con:property><con:property>LFTD</con:property><con:property>ID</con:property><con:property>FAF</con:property><con:property>INTR</con:property><con:property>CBL</con:property><con:property>GBL</con:property><con:property>BOND</con:property><con:property>SIGN</con:property><con:property>QUOTEID</con:property><con:property>PROMO</con:property><con:property>ITEM#</con:property><con:property>G/D</con:property><con:property>REF1 #</con:property><con:property>Ref1 Type</con:property><con:property>Ref2 #</con:property><con:property>Ref2 Type</con:property><con:property>Third Party- Name</con:property><con:property>Third Party- C/O</con:property><con:property>Third Party- Role</con:property><con:property>Third Party- Number</con:property><con:property>Third Party- Dir1</con:property><con:property>Third Party- Street</con:property><con:property>Third Party- Suf</con:property><con:property>Third Party- Dir2</con:property><con:property>Third Party- Unit</con:property><con:property>Third Party- Type</con:property><con:property>Third Party- Store</con:property><con:property>Third Party- City</con:property><con:property>Third Party- State</con:property><con:property>Third Party- Zip</con:property><con:property>NITE</con:property><con:property>FOOD</con:property><con:property>H/U1</con:property><con:property>PKG1</con:property><con:property>WGT1</con:property><con:property>PCS1</con:property><con:property>UOM1</con:property><con:property>CL1</con:property><con:property>NMFC1</con:property><con:property>SUB1</con:property><con:property>CFT1</con:property><con:property>DENS1</con:property><con:property>DESCR1A</con:property><con:property>DESCR1B</con:property><con:property>H/U2</con:property><con:property>PKG2</con:property><con:property>WGT2</con:property><con:property>PCS2</con:property><con:property>UOM2</con:property><con:property>CL2</con:property><con:property>NMFC2</con:property><con:property>SUB2</con:property><con:property>CFT2</con:property><con:property>DENS2</con:property><con:property>DESCR2A</con:property><con:property>DESCR2B</con:property><con:property>H/U3</con:property><con:property>PKG3</con:property><con:property>WGT3</con:property><con:property>PCS3</con:property><con:property>UOM3</con:property><con:property>CL3</con:property><con:property>NMFC3</con:property><con:property>SUB3</con:property><con:property>CFT3</con:property><con:property>DENS3</con:property><con:property>DESCR3A</con:property><con:property>DESCR3B</con:property><con:property>STC/SLC</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="jdbc" name="AccesorialLegacyDB" id="d2f67f5f-f05e-44eb-b1cf-c350bd6635d2"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>Legacy</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\Legacy;databaseName=Legacy_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>select distinct t.[TBL_CDWRD], m.Record_Key, m.WGP_ID_NBR,sli.[SLI_SHP_TAG] from Legacy.M204_WGP m
+left outer join Legacy.M204_SLI sli on sli.[SLI_SHP_TAG] = m.[WGP_SHP_TAG ]
+left outer join Legacy.M204_TBL t on t.[TBL_CDWRD]=sli.[SLI_BCW] 
+where (m.WGP_ID_NBR = '${SpreadSheet#PRO}' and t.[TBL_CDWRD]= 'APPT'  and t.RECTYPE='TBL11.BASE' and sli.[sli_bcw] is not null)
+order by  t.[TBL_CDWRD] asc</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="AccesorialBDDDB" id="9e749d07-2f3b-4a03-a211-623f8f1eb562"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>BDD</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\ads;databaseName=OPS_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>select s.Shipment_Key ,ai.Accessorial_Item_CD, s.PRO_NB, s.WGP_Record_Key from SHIP.Shipment s left outer join [SHIP].[BOL_Accessorial_Item_VW] bai on (bai.[Shipment_KEY] = s.[Shipment_KEY]) left outer join [SHIP].[Accessorial_Item_VW] ai on (ai.[Accessorial_Item_KEY] = bai.[Accessorial_Item_KEY])
+where s.PRO_NB = '${SpreadSheet#PRO}' and ai.Accessorial_Item_CD = 'APPT'  and ai.Accessorial_Item_CD is not null order by s.PRO_NB desc, ai.Accessorial_Item_CD asc
+
+ 
+</con:query><con:assertion type="MessageContentAssertion" id="15ef9c41-8a1e-4674-aec7-02f46a5a4910" name="Legacy-BDD Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/ACCESSORIAL_ITEM_CD[1]</con:xpath><con:element>ACCESSORIAL_ITEM_CD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/TBL_CDWRD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/WGP_RECORD_KEY[1]</con:xpath><con:element>WGP_RECORD_KEY</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/RECORD_KEY[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Results>
+   <ResultSet fetchSize="128">
+      <Row rowNumber="1">
+         <SHIPMENT_KEY>2469392</SHIPMENT_KEY>
+         <ACCESSORIAL_ITEM_CD>HOMD</ACCESSORIAL_ITEM_CD>
+         <PRO_NB>3484945912</PRO_NB>
+         <WGP_RECORD_KEY>201710161109346730030782300049</WGP_RECORD_KEY>
+      </Row>
+   </ResultSet>
+</Results>]]></con:originalMessage></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="request" name="SLI-TBLAccesorial" id="f38e23ac-7706-42f2-8a52-890408ec9c2c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>wsdl_getPackageInfo_Binder</con:interface><con:operation>MIDAF</con:operation><con:request name="SLI-TBLAccesorial" id="b3a5b619-f30e-4a89-a2da-70ddf4bb6b7f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://satest-trust.ago.test.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>WGP</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>RECORD.KEY</name>
+      <value>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_RECORD_KEY[1]}</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>]]></con:request><con:assertion type="MessageContentAssertion" id="03cfa0bb-d476-469b-ba44-2799af65b91d" name="M204-Legacy-Assert"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//dataOutput[1]/record[1]/WGP.TNDR.CDWRD[1]</con:xpath><con:element>WGP.TNDR.CDWRD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>APPT</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/RECORD.KEY[1]</con:xpath><con:element>RECORD.KEY</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/RECORD_KEY[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<dataOutput>
+   <hdr>
+      <returnCode>0000</returnCode>
+      <returnText>Done</returnText>
+      <recordCount>1</recordCount>
+   </hdr>
+   <record>
+      <CREATE.DATE>20180130</CREATE.DATE>
+      <SHP.PURPOSE>GR</SHP.PURPOSE>
+      <SHP.LOCAL.ACT.CD.RPRTD>092L</SHP.LOCAL.ACT.CD.RPRTD>
+      <SHP.LOCAL.ACT.CD.RPRTD.RCVR>0995</SHP.LOCAL.ACT.CD.RPRTD.RCVR>
+      <WGP.PU.NBR>121725</WGP.PU.NBR>
+      <WGP.ID.NBR>2925114524</WGP.ID.NBR>
+      <WGP.COMPANY.CODE>002</WGP.COMPANY.CODE>
+      <WGP.ORIG.ORZ.TAG>326</WGP.ORIG.ORZ.TAG>
+      <WGP.PU.SIGN.DT>20180130</WGP.PU.SIGN.DT>
+      <WGP.PLANNED.DEST.ORZ.TAG>422</WGP.PLANNED.DEST.ORZ.TAG>
+      <WGP.PLANNED.DEST.ORZ.ZN.CD>1</WGP.PLANNED.DEST.ORZ.ZN.CD>
+      <WGP.MVC>H</WGP.MVC>
+      <WGP.SHP.TAG>2SHP1801301709564700</WGP.SHP.TAG>
+      <WGP.TTL.NBR.HNDLNG.UNITS>1</WGP.TTL.NBR.HNDLNG.UNITS>
+      <WGP.TTL.ACTL.WGT>500</WGP.TTL.ACTL.WGT>
+      <WGP.DUE.DATE>20180201</WGP.DUE.DATE>
+      <WGP.PS.DUE.DATE>20180201</WGP.PS.DUE.DATE>
+      <WGP.STD.SRVC.DAYS>2</WGP.STD.SRVC.DAYS>
+      <WGP.PLANNED.TRNSFR.ORZ.TAG>326</WGP.PLANNED.TRNSFR.ORZ.TAG>
+      <WGP.PLANNED.TRNSFR.ORZ.TAG>422</WGP.PLANNED.TRNSFR.ORZ.TAG>
+      <SHP.TO.BUS.TAG>80502756765</SHP.TO.BUS.TAG>
+      <WGP.SHPR.TAG>77342245382</WGP.SHPR.TAG>
+      <WGP.CONS.TAG>80502756765</WGP.CONS.TAG>
+      <WGP.DL.IND>N</WGP.DL.IND>
+      <WGP.BL.IMAGE.IND>N</WGP.BL.IMAGE.IND>
+      <WGP.DR.IMAGE.IND>N</WGP.DR.IMAGE.IND>
+      <WGP.SVC.TRANSIT.MODE>I</WGP.SVC.TRANSIT.MODE>
+      <WGP.WI.IND>W</WGP.WI.IND>
+      <WGP.WI.SRCE>A</WGP.WI.SRCE>
+      <BUS.CMPNY.TYPE>ASOC</BUS.CMPNY.TYPE>
+      <DTS.DTTMSP>20180130171001023</DTS.DTTMSP>
+      <RECORD.KEY>201801301709569170042994600049</RECORD.KEY>
+      <WGP.TAG>2WGP1801301709569946</WGP.TAG>
+      <MUN.KEY>2925114524180130170956759946</MUN.KEY>
+      <TWG.TO.ORZ.TAG>326</TWG.TO.ORZ.TAG>
+      <TWG.INDX>1</TWG.INDX>
+      <TWG.TYPE>PICKUP</TWG.TYPE>
+      <TWG.ENDT>20180130</TWG.ENDT>
+      <TWG.PU.TO.EQP.NBR>121725</TWG.PU.TO.EQP.NBR>
+      <WGP.ENROUTE.ORIG.ORZ>326</WGP.ENROUTE.ORIG.ORZ>
+      <WGP.ENROUTE.PLANNED.DEST.ORZ>422</WGP.ENROUTE.PLANNED.DEST.ORZ>
+      <WGP.TNDR.CDWRD>APPT</WGP.TNDR.CDWRD>
+      <WGP.TNDR.DT>20180131</WGP.TNDR.DT>
+      <WGP.TNDR.TIME>^</WGP.TNDR.TIME>
+      <WGP.TNDR.ORZ.TAG>326</WGP.TNDR.ORZ.TAG>
+      <WGP.WI.REWEIGH.IND>Y</WGP.WI.REWEIGH.IND>
+      <WGP.DIMS.IND>0</WGP.DIMS.IND>
+      <WGP.LATEST.DSP.DT>20180131</WGP.LATEST.DSP.DT>
+      <WGP.LATEST.DSP.TIME>2106</WGP.LATEST.DSP.TIME>
+   </record>
+</dataOutput>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" name="M204-BDD-Assert" id="6436f51c-de37-4f55-a840-5f1846d4c5cc"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//dataOutput[1]/record[1]/WGP.TNDR.CDWRD[1]</con:xpath><con:element>WGP.TNDR.CDWRD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/ACCESSORIAL_ITEM_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/RECORD.KEY[1]</con:xpath><con:element>RECORD.KEY</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_RECORD_KEY[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<dataOutput>
+   <hdr>
+      <returnCode>0000</returnCode>
+      <returnText>Done</returnText>
+      <recordCount>1</recordCount>
+   </hdr>
+   <record>
+      <CREATE.DATE>20171016</CREATE.DATE>
+      <SHP.PURPOSE>GR</SHP.PURPOSE>
+      <SHP.LOCAL.ACT.CD.RPRTD>1622</SHP.LOCAL.ACT.CD.RPRTD>
+      <SHP.LOCAL.ACT.CD.RPRTD.RCVR>0435</SHP.LOCAL.ACT.CD.RPRTD.RCVR>
+      <WGP.PU.NBR>261142</WGP.PU.NBR>
+      <WGP.ID.NBR>3484945912</WGP.ID.NBR>
+      <WGP.COMPANY.CODE>002</WGP.COMPANY.CODE>
+      <WGP.ORIG.ORZ.TAG>422</WGP.ORIG.ORZ.TAG>
+      <WGP.PU.SIGN.DT>20171016</WGP.PU.SIGN.DT>
+      <WGP.PLANNED.DEST.ORZ.TAG>547</WGP.PLANNED.DEST.ORZ.TAG>
+      <WGP.PLANNED.DEST.ORZ.ZN.CD>1</WGP.PLANNED.DEST.ORZ.ZN.CD>
+      <WGP.MVC>H*</WGP.MVC>
+      <WGP.SHP.TAG>2SHP1710161109347258</WGP.SHP.TAG>
+      <WGP.TTL.NBR.HNDLNG.UNITS>3</WGP.TTL.NBR.HNDLNG.UNITS>
+      <WGP.TTL.ACTL.WGT>1000</WGP.TTL.ACTL.WGT>
+      <WGP.DUE.DATE>20171018</WGP.DUE.DATE>
+      <WGP.PS.DUE.DATE>20171018</WGP.PS.DUE.DATE>
+      <WGP.STD.SRVC.DAYS>2</WGP.STD.SRVC.DAYS>
+      <WGP.PLANNED.TRNSFR.ORZ.TAG>422</WGP.PLANNED.TRNSFR.ORZ.TAG>
+      <WGP.PLANNED.TRNSFR.ORZ.TAG>422</WGP.PLANNED.TRNSFR.ORZ.TAG>
+      <SHP.TO.BUS.TAG>77679535068</SHP.TO.BUS.TAG>
+      <WGP.SHPR.TAG>90286385948</WGP.SHPR.TAG>
+      <WGP.CONS.TAG>77679535068</WGP.CONS.TAG>
+      <WGP.DL.IND>N</WGP.DL.IND>
+      <WGP.BL.IMAGE.IND>N</WGP.BL.IMAGE.IND>
+      <WGP.DR.IMAGE.IND>N</WGP.DR.IMAGE.IND>
+      <WGP.SVC.TRANSIT.MODE>I</WGP.SVC.TRANSIT.MODE>
+      <WGP.WI.IND>B</WGP.WI.IND>
+      <WGP.WI.SRCE>A</WGP.WI.SRCE>
+      <DTS.DTTMSP>20171016140552625</DTS.DTTMSP>
+      <RECORD.KEY>201710161109346730030782300049</RECORD.KEY>
+      <WGP.TAG>2WGP1710161109347823</WGP.TAG>
+      <MUN.KEY>3484945912171016110934247823</MUN.KEY>
+      <TWG.TO.ORZ.TAG>422</TWG.TO.ORZ.TAG>
+      <TWG.INDX>1</TWG.INDX>
+      <TWG.TYPE>PICKUP</TWG.TYPE>
+      <TWG.ENDT>20171016</TWG.ENDT>
+      <TWG.PU.TO.EQP.NBR>261142</TWG.PU.TO.EQP.NBR>
+      <WGP.ENROUTE.ORIG.ORZ>422</WGP.ENROUTE.ORIG.ORZ>
+      <WGP.ENROUTE.PLANNED.DEST.ORZ>547</WGP.ENROUTE.PLANNED.DEST.ORZ>
+      <WGP.TNDR.CDWRD>HOMD</WGP.TNDR.CDWRD>
+      <WGP.TNDR.DT>^</WGP.TNDR.DT>
+      <WGP.TNDR.TIME>^</WGP.TNDR.TIME>
+      <WGP.TNDR.ORZ.TAG>422</WGP.TNDR.ORZ.TAG>
+      <WGP.WI.REWEIGH.IND>Y</WGP.WI.REWEIGH.IND>
+      <WGP.SRVC.IND>MTRO</WGP.SRVC.IND>
+      <WGP.LATEST.DSP.DT>20171017</WGP.LATEST.DSP.DT>
+      <WGP.LATEST.DSP.TIME>2306</WGP.LATEST.DSP.TIME>
+      <WGP.DIMS.IND>1</WGP.DIMS.IND>
+      <WGP.DIMS.RSN.CD>NMFC</WGP.DIMS.RSN.CD>
+   </record>
+</dataOutput>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="822adc93-eaf9-4f32-b8c9-7be02e4962bd" name="Message Content Assertion" disabled="true"><con:configuration xsi:type="con:MessageContentAssertion"><con:originalMessage><![CDATA[<dataOutput>
+   <hdr>
+      <returnCode>0000</returnCode>
+      <returnText>Done</returnText>
+      <recordCount>1</recordCount>
+   </hdr>
+   <record>
+      <CREATE.DATE>20171120</CREATE.DATE>
+      <SHP.PURPOSE>GR</SHP.PURPOSE>
+      <SHP.LOCAL.ACT.CD.RPRTD>2147</SHP.LOCAL.ACT.CD.RPRTD>
+      <SHP.LOCAL.ACT.CD.RPRTD.RCVR>7269</SHP.LOCAL.ACT.CD.RPRTD.RCVR>
+      <WGP.PU.NBR>840514</WGP.PU.NBR>
+      <WGP.ID.NBR>4836134105</WGP.ID.NBR>
+      <WGP.COMPANY.CODE>002</WGP.COMPANY.CODE>
+      <WGP.ORIG.ORZ.TAG>830</WGP.ORIG.ORZ.TAG>
+      <WGP.PU.SIGN.DT>20171120</WGP.PU.SIGN.DT>
+      <WGP.PLANNED.DEST.ORZ.TAG>532</WGP.PLANNED.DEST.ORZ.TAG>
+      <WGP.PLANNED.DEST.ORZ.ZN.CD>2</WGP.PLANNED.DEST.ORZ.ZN.CD>
+      <WGP.MVC>HT</WGP.MVC>
+      <WGP.SHP.TAG>2SHP1711201216578060</WGP.SHP.TAG>
+      <WGP.TTL.NBR.HNDLNG.UNITS>1</WGP.TTL.NBR.HNDLNG.UNITS>
+      <WGP.TTL.ACTL.WGT>500</WGP.TTL.ACTL.WGT>
+      <WGP.DUE.DATE>20171128</WGP.DUE.DATE>
+      <WGP.PS.DUE.DATE>20171128</WGP.PS.DUE.DATE>
+      <WGP.STD.SRVC.DAYS>4</WGP.STD.SRVC.DAYS>
+      <WGP.PLANNED.TRNSFR.ORZ.TAG>531</WGP.PLANNED.TRNSFR.ORZ.TAG>
+      <WGP.PLANNED.TRNSFR.ORZ.TAG>531</WGP.PLANNED.TRNSFR.ORZ.TAG>
+      <SHP.TO.BUS.TAG>00210480501</SHP.TO.BUS.TAG>
+      <WGP.SHPR.TAG>15113540207</WGP.SHPR.TAG>
+      <WGP.CONS.TAG>00210480501</WGP.CONS.TAG>
+      <WGP.DL.IND>N</WGP.DL.IND>
+      <WGP.BL.IMAGE.IND>N</WGP.BL.IMAGE.IND>
+      <WGP.DR.IMAGE.IND>N</WGP.DR.IMAGE.IND>
+      <WGP.SVC.TRANSIT.MODE>I</WGP.SVC.TRANSIT.MODE>
+      <WGP.WI.IND>W</WGP.WI.IND>
+      <WGP.WI.SRCE>A</WGP.WI.SRCE>
+      <DTS.DTTMSP>20171120121704532</DTS.DTTMSP>
+      <RECORD.KEY>201711201216579570030868000050</RECORD.KEY>
+      <WGP.TAG>2WGP1711201216578680</WGP.TAG>
+      <MUN.KEY>4836134105171120121657868680</MUN.KEY>
+      <TWG.TO.ORZ.TAG>830</TWG.TO.ORZ.TAG>
+      <TWG.INDX>1</TWG.INDX>
+      <TWG.TYPE>PICKUP</TWG.TYPE>
+      <TWG.ENDT>20171120</TWG.ENDT>
+      <TWG.PU.TO.EQP.NBR>840514</TWG.PU.TO.EQP.NBR>
+      <WGP.ENROUTE.ORIG.ORZ>830</WGP.ENROUTE.ORIG.ORZ>
+      <WGP.ENROUTE.PLANNED.DEST.ORZ>532</WGP.ENROUTE.PLANNED.DEST.ORZ>
+      <WGP.WI.REWEIGH.IND>Y</WGP.WI.REWEIGH.IND>
+      <WGP.LATEST.DSP.DT>20171126</WGP.LATEST.DSP.DT>
+      <WGP.LATEST.DSP.TIME>1324</WGP.LATEST.DSP.TIME>
+   </record>
+</dataOutput>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="request" name="MIDAF-TBLAccesorial" id="dbc01454-c61a-46ab-92e7-2da4121857fb" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>wsdl_getPackageInfo_Binder</con:interface><con:operation>MIDAF</con:operation><con:request name="MIDAF-TBLAccesorial" id="b3a5b619-f30e-4a89-a2da-70ddf4bb6b7f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://satest-trust.ago.test.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>TBL</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>RECTYPE</name>
+      <value>TBL11.BASE</value>
+      <operator>EQ</operator>
+      </field>
+       <field>
+      <name>TBL.CDWRD</name>
+      <value>HOMD</value>
+      <operator>EQ</operator>
+    </field>
+       <field>
+      <name>RECORD.KEY</name>
+      <value>201711291436269880030875700049</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>]]></con:request><con:assertion type="MessageContentAssertion" id="51c08459-eb80-432a-af95-bad58ba854f6" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:originalMessage><![CDATA[<dataOutput>
+   <hdr>
+      <returnCode>0000</returnCode>
+      <returnText>Done</returnText>
+      <recordCount>1</recordCount>
+   </hdr>
+   <record>
+      <RECTYPE>TBL11.BASE</RECTYPE>
+      <TBL.CHNG.EFF.DATE>20060827</TBL.CHNG.EFF.DATE>
+      <TBL.CDWRD>HOMD</TBL.CDWRD>
+      <TBL.CDWRD.ACT.IND>Y</TBL.CDWRD.ACT.IND>
+      <TBL.CHANGE.IND>N</TBL.CHANGE.IND>
+      <TBL.CDWRD.DESC>RESIDENTIAL DELIVERY FEE     *</TBL.CDWRD.DESC>
+      <TBL.WGT.CONTAINS.IND>B</TBL.WGT.CONTAINS.IND>
+      <TBL.TYPE.OF.RATE.IND>C</TBL.TYPE.OF.RATE.IND>
+      <TBL.REV.CHARGE.CD>D</TBL.REV.CHARGE.CD>
+      <TBL.REV.APPLCTN>S</TBL.REV.APPLCTN>
+      <TBL.COMP.GEN>B</TBL.COMP.GEN>
+      <TBL.TRAFFIC.STUDY.CD>00</TBL.TRAFFIC.STUDY.CD>
+      <TBL.CDWRD.SOURCE>F</TBL.CDWRD.SOURCE>
+      <TBL.INCL.NET.REV.IND>M</TBL.INCL.NET.REV.IND>
+      <TBL.EFF.DATE>19811123</TBL.EFF.DATE>
+      <TBL.EXP.DATE>20401231</TBL.EXP.DATE>
+      <TBL.RATE.REQMNT.IND></TBL.RATE.REQMNT.IND>
+      <TBL.SPCL.CHRG.CD.X12.1>RES</TBL.SPCL.CHRG.CD.X12.1>
+      <TBL.RATE.VAL.CD.X12.2>PH</TBL.RATE.VAL.CD.X12.2>
+      <TBL.WGT.QUAL.CD.X12.3>B</TBL.WGT.QUAL.CD.X12.3>
+      <TBL.ESO.CDWRD.IND>Y</TBL.ESO.CDWRD.IND>
+      <RECORD.KEY>201511091047404360000086802067</RECORD.KEY>
+      <DTS.DTTMSP>20161130104459329</DTS.DTTMSP>
+   </record>
+</dataOutput>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="restrequest" name="QuintiqAccesorial" id="b119e5fc-1a39-46c6-9986-5fcbd0997c31"><con:settings/><con:config service="REST Service 8" resourcePath="/webapps/citypd-spa/api/v1/shipment" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="QuintiqAccesorial" id="3c59e95b-1dc7-45b4-aca6-b2360a2abf08" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-authorization" value="YRC ${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://spasita.test.com</con:endpoint><con:request/><con:originalUri>https://spasita.test.com/webapps/citypd-spa/api/v1/shipment</con:originalUri><con:assertion type="MessageContentAssertion" id="99467c3a-7efe-426a-aaef-70c9dc9570ef" name="Quintiq-Legacy-Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:infoStatusList[1]/ns1:e[2]/ns1:propertyValue[1]</con:xpath><con:element>propertyValue</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/TBL_CDWRD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:proNumber[1]</con:xpath><con:element>proNumber</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_ID_NBR[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:infoStatusList[1]/ns1:e[3]/ns1:propertyValue[1]</con:xpath><con:element>propertyValue</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/TBL_CDWRD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://spasita.test.com/webapps/citypd-spa/api/v1/shipment">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID>06771051104</bizID>
+      <businessName>BRADCO SUPPLY</businessName>
+      <city>CHELMSFORD</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>MA</state>
+      <streetAddressLine1>20 INDUSTRIAL AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>01824</zipcode>
+   </consignee>
+   <currentTerminal>205</currentTerminal>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode>131G</customerCode>
+   <deliveryDate null="true"/>
+   <deliveryNotes>^ ^ ^ ^</deliveryNotes>
+   <deliveryZoneCode>1</deliveryZoneCode>
+   <destinationTerminal>100</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>99999899</propertyValue>
+      </e>
+      <e>
+         <propertyName>ACCESSORIALS</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>MTRO</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy null="true"/>
+   <numberOfHandlingUnits>1</numberOfHandlingUnits>
+   <numberOfPallets>1.00</numberOfPallets>
+   <numberOfShipmentPieces>1</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>205</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>9491571049</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2017-12-04</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>PLT</shipmentPieceType>
+   <shipper>
+      <bizID>97043582405</bizID>
+      <businessName>ABC HARDWARE &amp; RENTAL INC</businessName>
+      <city>BUFFALO</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>NY</state>
+      <streetAddressLine1>3336 BAILEY AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>14215</zipcode>
+   </shipper>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServicesIndicator>Y</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>750</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" name="Quintiq-BDD-Assertion" id="cee87e20-a2f4-4648-8c21-bc3bd082c412"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:infoStatusList[1]/ns1:e[2]/ns1:propertyValue[1]</con:xpath><con:element>propertyValue</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/ACCESSORIAL_ITEM_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:proNumber[1]</con:xpath><con:element>proNumber</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/PRO_NB[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:infoStatusList[1]/ns1:e[3]/ns1:propertyValue[1]</con:xpath><con:element>propertyValue</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/ACCESSORIAL_ITEM_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://spasita.test.com/webapps/citypd-spa/api/v1/shipment">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID>06771051104</bizID>
+      <businessName>BRADCO SUPPLY</businessName>
+      <city>CHELMSFORD</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>MA</state>
+      <streetAddressLine1>20 INDUSTRIAL AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>01824</zipcode>
+   </consignee>
+   <currentTerminal>205</currentTerminal>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode>131G</customerCode>
+   <deliveryDate null="true"/>
+   <deliveryNotes>^ ^ ^ ^</deliveryNotes>
+   <deliveryZoneCode>1</deliveryZoneCode>
+   <destinationTerminal>100</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>99999899</propertyValue>
+      </e>
+      <e>
+         <propertyName>ACCESSORIALS</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>MTRO</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy null="true"/>
+   <numberOfHandlingUnits>1</numberOfHandlingUnits>
+   <numberOfPallets>1.00</numberOfPallets>
+   <numberOfShipmentPieces>1</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>205</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>9491571049</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2017-12-04</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>PLT</shipmentPieceType>
+   <shipper>
+      <bizID>97043582405</bizID>
+      <businessName>ABC HARDWARE &amp; RENTAL INC</businessName>
+      <city>BUFFALO</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>NY</state>
+      <streetAddressLine1>3336 BAILEY AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>14215</zipcode>
+   </shipper>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServicesIndicator>Y</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>750</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="shipmentKey" value="${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHIPMENT_KEY[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="QuintiqAccesorial1" id="937680d8-f714-4b0a-b080-550b62d11696" disabled="true"><con:settings/><con:config service="REST Service 2" resourcePath="/citypd/api/v1/shipment/" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="QuintiqAccesorial1" id="284aa5fa-3ffc-4002-9aa3-5acaca493059" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://sb-sita.test.com</con:endpoint><con:request/><con:originalUri>http://sb-sita.test.com/citypd/api/v1/shipment/</con:originalUri><con:assertion type="MessageContentAssertion" id="af1d55f0-82b0-4675-a39f-61e997536572" name="Qunitiq-Legacy-Assert"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:infoStatusList[1]/ns1:e[2]/ns1:propertyValue[1]</con:xpath><con:element>propertyValue</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/TBL_CDWRD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:proNumber[1]</con:xpath><con:element>proNumber</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${SpreadSheet#PRO}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="http://sb-sita.test.com/citypd/api/v1/shipment/">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID>77679535068</bizID>
+      <businessName>ROCKY MOUNTAIN REMAN INC</businessName>
+      <city>ROGERSVILLE</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>MO</state>
+      <streetAddressLine1>303 E CENTER ST</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>65742</zipcode>
+   </consignee>
+   <currentTerminal>422</currentTerminal>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode>0435</customerCode>
+   <deliveryDate null="true"/>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>1</deliveryZoneCode>
+   <destinationTerminal>547</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>15660006</propertyValue>
+      </e>
+      <e>
+         <propertyName>ACCESSORIALS</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>MTRO</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy null="true"/>
+   <numberOfHandlingUnits>3</numberOfHandlingUnits>
+   <numberOfPallets>3.00</numberOfPallets>
+   <numberOfShipmentPieces>3</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>422</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>3484945912</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2017-10-18</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>BIN</shipmentPieceType>
+   <shipper>
+      <bizID>90286385948</bizID>
+      <businessName>A B C FENCE</businessName>
+      <city>MADISON</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>TN</state>
+      <streetAddressLine1>116 SHAKESPEARE AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>37115</zipcode>
+   </shipper>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServicesIndicator>Y</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>1000</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="78f3bb86-0f77-401f-85b3-383278165f37" name="Quintiq-BDD-Assert"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:infoStatusList[1]/ns1:e[2]/ns1:propertyValue[1]</con:xpath><con:element>propertyValue</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/ACCESSORIAL_ITEM_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:proNumber[1]</con:xpath><con:element>proNumber</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${SpreadSheet#PRO}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="http://sb-sita.test.com/citypd/api/v1/shipment/">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID>77679535068</bizID>
+      <businessName>ROCKY MOUNTAIN REMAN INC</businessName>
+      <city>ROGERSVILLE</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>MO</state>
+      <streetAddressLine1>303 E CENTER ST</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>65742</zipcode>
+   </consignee>
+   <currentTerminal>422</currentTerminal>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode>0435</customerCode>
+   <deliveryDate null="true"/>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>1</deliveryZoneCode>
+   <destinationTerminal>547</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>15660006</propertyValue>
+      </e>
+      <e>
+         <propertyName>ACCESSORIALS</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>HOMD</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>MTRO</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy null="true"/>
+   <numberOfHandlingUnits>3</numberOfHandlingUnits>
+   <numberOfPallets>3.00</numberOfPallets>
+   <numberOfShipmentPieces>3</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>422</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>3484945912</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2017-10-18</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>BIN</shipmentPieceType>
+   <shipper>
+      <bizID>90286385948</bizID>
+      <businessName>A B C FENCE</businessName>
+      <city>MADISON</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>TN</state>
+      <streetAddressLine1>116 SHAKESPEARE AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>37115</zipcode>
+   </shipper>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServicesIndicator>Y</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>1000</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="shipmentKey" value="${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHIPMENT_KEY[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="datasink" name="AccesorialsTestResult" id="2704afa1-9292-4b36-98b4-76bb4b6ca67b"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>TestResults/AccesorialsTestResultMaster-APPT.xlsx</file><outfile>TestResults/AccesorialsTestResultMaster-APPT.xlsx</outfile><worksheet>Sheet1</worksheet><cell>A2</cell><evaluateFormulas>false</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>ExcelPro</con:name><con:value>${SpreadSheet#PRO}</con:value></con:property><con:property><con:name>BDDRecordkey</con:name><con:value>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_RECORD_KEY[1]}</con:value></con:property><con:property><con:name>LegacyRecordKey</con:name><con:value>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/RECORD_KEY[1]}</con:value></con:property><con:property><con:name>M204RecordKey</con:name><con:value>${SLI-TBLAccesorial#Response#//dataOutput[1]/record[1]/RECORD.KEY[1]}</con:value></con:property><con:property><con:name>BDDAccesorialCD</con:name><con:value>${AccesorialBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/ACCESSORIAL_ITEM_CD[1]}</con:value></con:property><con:property><con:name>LegacyAccesorialCD</con:name><con:value>${AccesorialLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/TBL_CDWRD[1]}</con:value></con:property><con:property><con:name>M204AccesorialCD</con:name><con:value>${SLI-TBLAccesorial#Response#//dataOutput[1]/record[1]/WGP.TNDR.CDWRD[1]}</con:value></con:property><con:property><con:name>QuintiqAccesorialCD</con:name><con:value>${QuintiqAccesorial#Response#$['infoStatusList'][1]['propertyValue']}</con:value></con:property><con:property><con:name>QuintiqStatus</con:name><con:value>${=testRunner.runTestStepByName("QuintiqAccesorial").getStatus()}</con:value></con:property><con:property><con:name>MIDAFStatus</con:name><con:value>${=testRunner.runTestStepByName("SLI-TBLAccesorial").getStatus()}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="Iterate" id="2f9a767c-c4d4-4dea-9eef-d2b43b065cb4"><con:settings/><con:config><dataSourceStep>SpreadSheet</dataSourceStep><targetStep>AccesorialLegacyDB</targetStep></con:config></con:testStep><con:properties><con:property><con:name>APPTResults</con:name><con:value>D:\test\ROS-ReadyApi\TestResults\AccesorialsTestResultMaster-APPT.xlsx</con:value></con:property></con:properties><con:reportParameters/><con:breakPoints><con:testStepId>3d701d08-99f8-4069-b184-715a83729ac3</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>2b14239a-e2e3-46dd-85fc-c27ca8a8d4fa</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>ed069d7f-2d30-4ffa-805f-8eddac59a339</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:environmentSpec><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testCase>

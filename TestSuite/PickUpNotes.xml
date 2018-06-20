@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="87301629-2f15-483b-a707-5f486f0778d9" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PickUpNotes" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="87301629-2f15-483b-a707-5f486f0778d9fileName">PickUpNotes</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Authentication" id="3d0c286a-4068-409a-a094-7d4f3ad35aea"><con:settings/><con:config service="REST Service 5" resourcePath="/webapps/security-spa/api/security/authenticate" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authentication" id="eb90dad0-674b-44b3-bf33-7a9456c529b9" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://javatest.test.com:4035</con:endpoint><con:request>username=test\dccBatch&amp;password=test</con:request><con:originalUri>https://javatest.test.com/webapps/security-spa/api/security/authenticate</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="f69b563f-dabc-466a-a2e3-fad5f2468263"><con:settings/><con:config><script>def today = new Date()
+def future = today + 1
+log.info today.format("MM/dd/yy")
+def ft = future.format("MM/dd/yy")
+log.info ft
+testRunner.testCase.setPropertyValue("PickUpDate", ft)</script></con:config></con:testStep><con:testStep type="datasource" name="PRSTestdata" id="5f3ed51e-28dd-4209-a696-603f69bc0957"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>../TestData/PRSTESTDATA1Shipper422Terminal.xlsx</file><worksheet>Sheet1</worksheet><cell>A2</cell><ignoreEmpty>false</ignoreEmpty><evaluateFormulas>false</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>pickupLocationCompany</con:property><con:property>pickupLocationAddress</con:property><con:property>pickupLocationCity</con:property><con:property>pickupLocationCountry</con:property><con:property>pickupLocationState</con:property><con:property>pickupLocationZip</con:property><con:property>pickupLocationBusinessId</con:property><con:property>requesterRole</con:property><con:property>requesterCompany</con:property><con:property>requesterAddress</con:property><con:property>requesterCity</con:property><con:property>requesterState</con:property><con:property>requesterZipCode</con:property><con:property>requesterCountry</con:property><con:property>requesterContactName</con:property><con:property>requesterContactEmail</con:property><con:property>requesterContactPhone</con:property><con:property>requesterBusinessId</con:property><con:property>department</con:property><con:property>onSiteContactName</con:property><con:property>onSiteContactPhone</con:property><con:property>onSiteContactPhoneExt</con:property><con:property>driverNotes</con:property><con:property>pickupNotes</con:property><con:property>readyTime</con:property><con:property>closeTime</con:property><con:property>liftgate</con:property><con:property>confirmation</con:property><con:property>consigneeCity</con:property><con:property>consigneeCountry</con:property><con:property>consigneeZip</con:property><con:property>consigneeState</con:property><con:property>consigneeCompany</con:property><con:property>certified</con:property><con:property>certifiedEmail</con:property><con:property>serviceType</con:property><con:property>proNumber</con:property><con:property>handlingUnits</con:property><con:property>weight</con:property><con:property>paymentTerms</con:property><con:property>hazardous</con:property><con:property>freezable</con:property><con:property>packageType</con:property><con:property>food</con:property><con:property>poison</con:property><con:property>length</con:property><con:property>width</con:property><con:property>height</con:property><con:property>linearFeet</con:property><con:property>totalShipments</con:property><con:property>Pro</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="CreatePickup" id="e6688bdc-733a-4b74-98cc-35a0a56be33f"><con:settings/><con:config service="REST Service 11" resourcePath="/prsapi/api/v1/pickups" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreatePickup" id="e11eda0c-86e2-45be-b5ce-b3a53718a7b7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Authorization" value="${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:request>{  
+   "pickupLocationCompany":"${PRSTestdata#pickupLocationCompany}",
+   "pickupLocationAddress":"${PRSTestdata#pickupLocationAddress}",
+   "pickupLocationCity":"${PRSTestdata#pickupLocationCity}",
+   "pickupLocationCountry":"${PRSTestdata#pickupLocationCountry}",
+   "pickupLocationState":"${PRSTestdata#pickupLocationState}",
+   "pickupLocationZip":"${PRSTestdata#pickupLocationZip}",
+   "pickupLocationBusinessId":"${PRSTestdata#pickupLocationBusinessId}",
+   "requesterRole":"${PRSTestdata#requesterRole}",
+   "requesterCompany":"${PRSTestdata#requesterCompany}",
+   "requesterAddress":"${PRSTestdata#requesterAddress}",
+   "requesterCity":"${PRSTestdata#requesterCity}",
+   "requesterState":"${PRSTestdata#requesterState}",
+   "requesterZipCode":"${PRSTestdata#requesterZipCode}",
+   "requesterCountry":"${PRSTestdata#requesterCountry}",
+   "requesterContactName":"${PRSTestdata#requesterContactName}",
+   "requesterContactEmail":"",
+   "requesterContactPhone":"${PRSTestdata#requesterContactPhone}",
+   "requesterContactPhoneExt":"",
+   "requesterBusinessId":"${PRSTestdata#requesterBusinessId}",
+   "department":"${PRSTestdata#department}",
+   "onSiteContactName":"${PRSTestdata#onSiteContactName}",
+   "onSiteContactPhone":"${PRSTestdata#onSiteContactPhone}",
+   "onSiteContactPhoneExt":"",
+   "driverNotes":"${PRSTestdata#driverNotes}",
+   "pickupNotes":"${PRSTestdata#pickupNotes}",
+   "pickupDate":"${#TestCase#PickUpDate}",
+   "readyTime":"09:59",
+   "closeTime":"19:00",
+   "liftgate":"${PRSTestdata#liftgate}",
+   "confirmation":"${PRSTestdata#confirmation}",
+   "shipments":[  
+      {  
+         "consigneeCity":"${PRSTestdata#consigneeCity}",
+         "consigneeCountry":"${PRSTestdata#consigneeCountry}",
+         "consigneeZip":"${PRSTestdata#consigneeZip}",
+         "consigneeState":"${PRSTestdata#consigneeState}",
+         "consigneeCompany":"${PRSTestdata#consigneeCompany}",
+         "certified":"${PRSTestdata#certified}",
+         "certifiedEmail":"${PRSTestdata#certifiedEmail}",
+         "serviceType":"${PRSTestdata#serviceType}",
+         "proNumber":"",
+         "handlingUnits":${PRSTestdata#handlingUnits},
+         "weight":${PRSTestdata#weight},
+         "paymentTerms":"${PRSTestdata#paymentTerms}",
+         "hazardous":"${PRSTestdata#hazardous}",
+         "freezable":"${PRSTestdata#freezable}",
+         "packageType":"${PRSTestdata#packageType}",
+         "food":"${PRSTestdata#food}",
+         "poison":"${PRSTestdata#poison}",
+         "length":"${PRSTestdata#length}",
+         "width":"${PRSTestdata#width}",
+         "height":"${PRSTestdata#height}",
+         "linearFeet":"${PRSTestdata#linearFeet}",
+         "totalShipments":${PRSTestdata#totalShipments},
+         "confirmation":"NO"
+      }
+   ]
+}</con:request><con:originalUri>http://sb-sita.test.com/prsapi/api/v1/pickups</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="UpdatePro" id="17db3a6f-a513-4474-bf01-7138b85cf5ef"><con:settings/><con:config service="REST Service 12" resourcePath="/webapps/prs-spa/api/v1/pickups/${CreatePickup#Response#$['referenceIds'][0]}" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdatePro" id="977affca-6525-4e09-96fa-85ac184bfe18" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="X-Authorization" value="YRC ${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:request>{
+	"department":"PRS",
+	"status":"C",
+	"reasonCode":"R800",
+	"driverId":"",
+	"reasonCodeNotes":"Disp. Comp.:05/21 08:00 completed",
+	"proNumber":"${PRSTestdata#Pro}"
+} </con:request><con:originalUri>https://spasita.test.com/webapps/prs-spa/api/v1/pickups/03069074</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="jdbc" name="CUSDB" id="58b5b672-cfb3-413f-8715-7dc2f1e5b63a"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://ywsqltest\csm;databaseName=CSM_SA;integratedSecurity= true</con:connectionString><con:connectionProperties/><con:query>SELECT [Pickup_Request_Key]
+      ,[Pickup_Reference_ID]
+      ,[Pickup_Comment_TX]
+      --,[Pickup_Additional_Comment_TX]
+      --,[Pickup_Driver_Note_TX]
+      
+  FROM [CSM_SA].[CUS].[Pickup_Request] where [Pickup_Reference_ID]= '${CreatePickup#Response#$['referenceIds'][0]}'</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="LegacyDB" id="72c0fd16-a21b-492b-95c5-78523016c209"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqlltest\Legacy;databaseName=Legacy_SA;integratedSecurity= true</con:connectionString><con:connectionProperties/><con:query>SELECT PAS_TXT3_PU_COMM1,
+[PAS_PU_REFERENCE_ID]
+      --,[Pickup_Additional_Comment_TX]
+      --,[Pickup_Driver_Note_TX]
+      
+  FROM [Legacy].[M204_PAS] where [PAS_PU_REFERENCE_ID]= '${CreatePickup#Response#$['referenceIds'][0]}'</con:query><con:assertion type="MessageContentAssertion" id="b1993878-da8f-4f69-93f5-3d21a73c9e7f" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/PAS_TXT3_PU_COMM1[1]</con:xpath><con:element>PAS_TXT3_PU_COMM1</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CUSDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/PICKUP_COMMENT_TX[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Results>
+   <ResultSet fetchSize="128">
+      <Row rowNumber="1">
+         <PAS_TXT3_PU_COMM1>Pickup notes</PAS_TXT3_PU_COMM1>
+         <PAS_PU_REFERENCE_ID>03069074</PAS_PU_REFERENCE_ID>
+      </Row>
+   </ResultSet>
+</Results>]]></con:originalMessage></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="2748fcfa-da22-47be-9fb4-e65e8c61dd7e"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>Copy of Authentication</targetStep><discardResults>true</discardResults></con:config></con:testStep><con:properties><con:property><con:name>PickUpDate</con:name><con:value>05/23/18</con:value></con:property></con:properties><con:reportParameters/><con:breakPoints><con:testStepId>5f3ed51e-28dd-4209-a696-603f69bc0957</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>f69b563f-dabc-466a-a2e3-fad5f2468263</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>e6688bdc-733a-4b74-98cc-35a0a56be33f</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>17db3a6f-a513-4474-bf01-7138b85cf5ef</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>58b5b672-cfb3-413f-8715-7dc2f1e5b63a</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>72c0fd16-a21b-492b-95c5-78523016c209</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

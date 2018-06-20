@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="c1e7bd0e-9be5-44df-99e5-f2469be23158" name="TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting><con:setting id="c1e7bd0e-9be5-44df-99e5-f2469be23158fileName">TestSuite</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:tearDownScript>def passed=0
+def failed=0
+
+
+for ( testCaseResult in runner.results )
+{
+    for ( testStepResult in testCaseResult.getResults() ){
+
+    	log.info testCaseResult.getResults().metaClass.methods*.name.sort().unique()
+    	log.info testStepResult.status
+    	 if (testStepResult.status.toString()=="OK") passed++
+    	 	else failed++
+	}	
+}
+log.info "passed="+passed+" failed="+failed
+
+runner.testSuite.project.setPropertyValue("passed", "$passed" ) 
+runner.testSuite.project.setPropertyValue("failed", "$failed" ) </con:tearDownScript><con:reportParameters/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testSuite>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e875bd93-bc45-4b23-b7b5-20c104a8683f" discardOkResults="false" failOnError="false" failTestCaseOnErrors="false" keepSession="false" name="ApptStart&amp;EndDate TestCase" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e875bd93-bc45-4b23-b7b5-20c104a8683ffileName">ApptStart%26EndDate-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="SpreadSheet" id="6b03b6f1-e353-4f43-8a54-a721b28cb9c1"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>ProNmSIT_10162017.xlsx</file><worksheet>Main</worksheet><cell>A4</cell><ignoreEmpty>false</ignoreEmpty><evaluateFormulas>false</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>PRO</con:property><con:property>Status</con:property><con:property>PU Date</con:property><con:property>Type</con:property><con:property>Origin</con:property><con:property>Trailer Scac</con:property><con:property>Trailer</con:property><con:property>Shipper- Name</con:property><con:property>Shipper- Str#</con:property><con:property>Shipper- Phone #</con:property><con:property>Shipper- Number</con:property><con:property>Shipper- Dir1</con:property><con:property>Shipper- Street</con:property><con:property>Shipper- Suf</con:property><con:property>Shipper- Dir2</con:property><con:property>Shipper- Unit</con:property><con:property>Shipper- Type</con:property><con:property>Shipper- City</con:property><con:property>Shipper- State</con:property><con:property>Shipper- Zip</con:property><con:property>Consignee- Name</con:property><con:property>Consignee- Str#</con:property><con:property>Consignee- Phone #</con:property><con:property>Consignee- C/O</con:property><con:property>Consignee- Show</con:property><con:property>Consignee- Booth#</con:property><con:property>Consignee- Number</con:property><con:property>Consignee- Dir1</con:property><con:property>Consignee- Street</con:property><con:property>Consignee- Suf</con:property><con:property>Consignee- Dir2</con:property><con:property>Consignee- Unit</con:property><con:property>Consignee- Type</con:property><con:property>Consignee- City</con:property><con:property>Consignee- State</con:property><con:property>Consignee- Zip</con:property><con:property>Terms</con:property><con:property>GSV</con:property><con:property>NTFY</con:property><con:property>HOMD</con:property><con:property>LFTD</con:property><con:property>ID</con:property><con:property>FAF</con:property><con:property>INTR</con:property><con:property>CBL</con:property><con:property>GBL</con:property><con:property>BOND</con:property><con:property>SIGN</con:property><con:property>QUOTEID</con:property><con:property>PROMO</con:property><con:property>ITEM#</con:property><con:property>G/D</con:property><con:property>REF1 #</con:property><con:property>Ref1 Type</con:property><con:property>Ref2 #</con:property><con:property>Ref2 Type</con:property><con:property>Third Party- Name</con:property><con:property>Third Party- C/O</con:property><con:property>Third Party- Role</con:property><con:property>Third Party- Number</con:property><con:property>Third Party- Dir1</con:property><con:property>Third Party- Street</con:property><con:property>Third Party- Suf</con:property><con:property>Third Party- Dir2</con:property><con:property>Third Party- Unit</con:property><con:property>Third Party- Type</con:property><con:property>Third Party- Store</con:property><con:property>Third Party- City</con:property><con:property>Third Party- State</con:property><con:property>Third Party- Zip</con:property><con:property>NITE</con:property><con:property>FOOD</con:property><con:property>H/U1</con:property><con:property>PKG1</con:property><con:property>WGT1</con:property><con:property>PCS1</con:property><con:property>UOM1</con:property><con:property>CL1</con:property><con:property>NMFC1</con:property><con:property>SUB1</con:property><con:property>CFT1</con:property><con:property>DENS1</con:property><con:property>DESCR1A</con:property><con:property>DESCR1B</con:property><con:property>H/U2</con:property><con:property>PKG2</con:property><con:property>WGT2</con:property><con:property>PCS2</con:property><con:property>UOM2</con:property><con:property>CL2</con:property><con:property>NMFC2</con:property><con:property>SUB2</con:property><con:property>CFT2</con:property><con:property>DENS2</con:property><con:property>DESCR2A</con:property><con:property>DESCR2B</con:property><con:property>H/U3</con:property><con:property>PKG3</con:property><con:property>WGT3</con:property><con:property>PCS3</con:property><con:property>UOM3</con:property><con:property>CL3</con:property><con:property>NMFC3</con:property><con:property>SUB3</con:property><con:property>CFT3</con:property><con:property>DENS3</con:property><con:property>DESCR3A</con:property><con:property>DESCR3B</con:property><con:property>STC/SLC</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="Authentication" id="32cc87a0-4a47-4dee-95a8-76438ba8bcf5"><con:settings/><con:config service="REST Service 5" resourcePath="/webapps/security-spa/api/security/authenticate" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authentication" id="eb90dad0-674b-44b3-bf33-7a9456c529b9" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://javatest.test.com:4035</con:endpoint><con:request>username=test\dccBatch&amp;password=test</con:request><con:originalUri>https://javatest.test.com/webapps/security-spa/api/security/authenticate</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="jdbc" name="ApptSnEDateBDDDB" id="ac1d544a-a982-468b-b7c7-e594b1b6c1f3"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>BDD</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\ads;databaseName=OPS_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>select s.PRO_NB,s.Shipment_key,s.WGP_RECORD_KEY, Format(sa.Delivery_Appointment_Start_TS,'yyyy-MM-dd HH:mm:ss') as Delivery_Appointment_Start_TS  , Format(sa.Delivery_Appointment_End_TS,'yyyy-MM-dd HH:mm:ss') as Delivery_Appointment_End_TS  ,s.M204_SHP_TAG_ID                  
+from SHIP. Shipment_VW s
+left outer join [SHIP].[Shipment_Appointment_VW] sa on (sa.[Shipment_KEY] = s.[Shipment_KEY])
+where s.PRO_NB = '7381718530'</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="ApptSnEDateLegacyDB" id="c954855b-13f2-4ee8-91e1-99c414a89ce2"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>Legacy</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\Legacy;databaseName=Legacy_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>select [WGP_ID_NBR], wgapt.RECORD_KEY ,w.RECORD_KEY,
+format ([dbo].[ConvertimeToUTC]([dbo].[FormatDate](CONCAT (WGP_DL_APT_DT, LEFT(CONCAT(WGP_DL_APT_TIME,'0000000000'), 9))), (Select PLC_TIME_ZN  from [Ywsqlltest\legacy].legacy_sa.Legacy.m204_Xorz where orz_rfrnc_cd=WGP_PLANNED_DEST_ORZ_TAG)),'yyyy-MM-dd HH:mm:ss' )as Delivery_Appointment_Start_TS ,
+format ([dbo].[ConvertimeToUTC]( [dbo].[FormatDate](CONCAT (WGP_DL_APT_DT, LEFT(CONCAT(WGP_DL_APT_TIME2,'0000000000'),9))), (Select PLC_TIME_ZN  from [Ywsqlltest\legacy].legacy_sa.Legacy.m204_Xorz where orz_rfrnc_cd=WGP_PLANNED_DEST_ORZ_TAG)),'yyyy-MM-dd HH:mm:ss') as Delivery_Appointment_End_TS 
+from Legacy.M204_WGPAPT_REOCCUR wgaptr
+left outer join [Legacy].[M204_WGPAPT] wgapt on( wgapt.[RECORD_KEY] = wgaptr.[WGPAPT_RECORD_KEY])
+left outer join [Legacy].[M204_WGP] w on (w.[WGP_TAG]= wgapt.WGP_TAG) 
+left outer join [Legacy].[M204_XORZ] r on (w.[RECORD_KEY]= r.[RECORD_KEY]) --and r.orz_rfrnc_cd=WGP_PLANNED_DEST_ORZ_TAG
+where WGP_ID_NBR ='7381718530' 
+
+--7381718530, 5321511510
+
+
+</con:query><con:assertion type="MessageContentAssertion" id="0a3eaa50-e2b1-424a-8cd0-5c8a68c2ad25" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_START_TS[1]</con:xpath><con:element>DELIVERY_APPOINTMENT_START_TS</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_START_TS[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_END_TS[1]</con:xpath><con:element>DELIVERY_APPOINTMENT_END_TS</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_END_TS[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Results>
+   <ResultSet fetchSize="128">
+      <Row rowNumber="1">
+         <WGP_ID_NBR>7381718530</WGP_ID_NBR>
+         <RECORD_KEY>201803221108593720070242500050</RECORD_KEY>
+         <RECORD_KEY>201712061715178560038824603812</RECORD_KEY>
+         <DELIVERY_APPOINTMENT_START_TS>2018-45-22 18:45:00</DELIVERY_APPOINTMENT_START_TS>
+         <DELIVERY_APPOINTMENT_END_TS>2018-45-22 21:45:00</DELIVERY_APPOINTMENT_END_TS>
+      </Row>
+   </ResultSet>
+</Results>]]></con:originalMessage></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="request" name="ORGTAG" id="67e5cdc6-1a41-40d1-92f6-53e84a8324b4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>wsdl_getPackageInfo_Binder</con:interface><con:operation>MIDAF</con:operation><con:request name="ORGTAG" id="b3a5b619-f30e-4a89-a2da-70ddf4bb6b7f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://satest-trust.ago.test.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>WGP</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>RECORD.KEY</name>
+      <value>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/RECORD_KEY[2]}</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="request" name="MIDAF-ApptDate" id="ab033ef7-87bc-4808-9409-e67adfb8f17b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>wsdl_getPackageInfo_Binder</con:interface><con:operation>MIDAF</con:operation><con:request name="MIDAF-ApptDate" id="b3a5b619-f30e-4a89-a2da-70ddf4bb6b7f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://satest-trust.ago.test.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>WGPAPT</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>RECORD.KEY</name>
+      <value>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/RECORD_KEY[1]}</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="datasource" name="MidafApptUTC" id="77caa940-62de-43ae-992a-e403bf7a928d" disabled="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="pl" value="${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.PLANNED.DEST.ORZ.TAG[1]}"/>
+  &lt;con:entry key="apttm" value="${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.TIME.LOCAL[1]}"/>
+  &lt;con:entry key="aptdt" value="${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.DT.LOCAL[1]}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="JDBC"><con:configuration><driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver><connstr>jdbc:sqlserver://Ywsqlltest\Legacy;databaseName=Legacy_SA;integratedSecurity= true</connstr><pass/><Connection>Legacy( Sit )</Connection><query>--select [dbo].[FormatDate](CONCAT (:aptdt, LEFT(CONCAT(:apttm,'00000000000'),9))) as cd
+
+--select [dbo].[FormatDate](CONCAT ('${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.DT.LOCAL[1]}', LEFT(CONCAT('${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.TIME[1]}','00000000000'),9))) as cd
+
+--select [dbo].[ConvertimeToUTC]([dbo].[FormatDate](CONCAT (:aptdt, LEFT(CONCAT(:apttm,'0000000000'), 9))), (Select PLC_TIME_ZN  from [Ywsqlltest\legacy].legacy_sa.Legacy.m204_Xorz where orz_rfrnc_cd=:pl))
+
+ Select PLC_TIME_ZN  from Legacy.m204_Xorz where orz_rfrnc_cd '=:pl' 
+
+
+
+
+</query><fetchSize/><stored-procedure>false</stored-procedure></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>ab</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="jdbc" name="MIDAF-UTCConversion" id="7485fa27-e322-4823-a3b4-9ea79537adcc"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>Legacy</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\Legacy;databaseName=Legacy_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>--select ([dbo].[ConvertimeToUTC]([dbo].[FormatDate](CONCAT (${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT},LEFT(CONCAT(${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.APT.TIME[1]}'0000000000'), 9))), (Select PLC_TIME_ZN  from Legacy.m204_Xorz where orz_rfrnc_cd= '${ORGTAG#Response#//dataOutput[1]/record[1]/WGP.PLANNED.DEST.ORZ.TAG[1]}')) ) as midafstart
+
+--select ([dbo].[ConvertimeToUTC]([dbo].[FormatDate](CONCAT (${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT}, LEFT(CONCAT(${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.APT.TIME2[1]},'0000000000'), 9))), (Select PLC_TIME_ZN  from Legacy.m204_Xorz where orz_rfrnc_cd= '${ORGTAG#Response#//dataOutput[1]/record[1]/WGP.PLANNED.DEST.ORZ.TAG[1]}')) ) as midafenddate
+--${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.TIME.LOCAL[1]}${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT.TIME2[1]}
+
+--${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.TIME.LOCAL[2]}LEFT(CONCAT(${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DSRD.DL.TIME.LOCAL[2]}
+
+select format([dbo].[ConvertimeToUTC]([dbo].[FormatDate](CONCAT (${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT.DT[1]}, LEFT(CONCAT(${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT.TIME[1]},'0000000000'), 9))), (Select PLC_TIME_ZN  from [Ywsqlltest\legacy].legacy_sa.Legacy.m204_Xorz where orz_rfrnc_cd= '${ORGTAG#Response#//dataOutput[1]/record[1]/WGP.PLANNED.DEST.ORZ.TAG[1]}')),'yyyy-MM-dd HH:mm:ss') as midafstart
+select format ([dbo].[ConvertimeToUTC]([dbo].[FormatDate](CONCAT (${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT.DT[1]}, LEFT(CONCAT(${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/WGP.DL.APT.TIME2[1]},'0000000000'), 9))), (Select PLC_TIME_ZN  from [Ywsqlltest\legacy].legacy_sa.Legacy.m204_Xorz where orz_rfrnc_cd= '${ORGTAG#Response#//dataOutput[1]/record[1]/WGP.PLANNED.DEST.ORZ.TAG[1]}')),'yyyy-MM-dd HH:mm:ss') as midafend
+
+
+
+</con:query><con:assertion type="MessageContentAssertion" id="d94d9d63-5a41-4bc2-8902-15d858e5c096" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/MIDAFSTART[1]</con:xpath><con:element>MIDAFSTART</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_START_TS[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[2]/Row[1]/MIDAFEND[1]</con:xpath><con:element>MIDAFEND</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_END_TS[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Results>
+   <ResultSet fetchSize="128">
+      <Row rowNumber="1">
+         <MIDAFSTART>2018-45-22 18:45:00</MIDAFSTART>
+      </Row>
+   </ResultSet>
+   <ResultSet fetchSize="128">
+      <Row rowNumber="1">
+         <MIDAFEND>2018-45-22 21:45:00</MIDAFEND>
+      </Row>
+   </ResultSet>
+</Results>]]></con:originalMessage></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="restrequest" name="QuintiqApptDates" id="469cb001-62b8-4118-8414-7071b7d84f86" disabled="true"><con:settings/><con:config service="REST Service 2" resourcePath="/citypd/api/v1/shipment/" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="QuintiqApptDates" id="284aa5fa-3ffc-4002-9aa3-5acaca493059" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-authorization" value="YRC ${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://sb-sita.test.com</con:endpoint><con:request/><con:originalUri>http://sb-sita.test.com/citypd/api/v1/shipment/</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="shipmentKey" value="${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHIPMENT_KEY[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ApptDatesQuintiq" id="d2733791-acac-40b9-82b4-95f633e41b9b"><con:settings/><con:config service="REST Service 8" resourcePath="/webapps/citypd-spa/api/v1/shipment" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ApptDatesQuintiq" id="3c59e95b-1dc7-45b4-aca6-b2360a2abf08" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-authorization" value="YRC ${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://spasita.test.com</con:endpoint><con:request/><con:originalUri>https://spasita.test.com/webapps/citypd-spa/api/v1/shipment</con:originalUri><con:assertion type="MessageContentAssertion" id="1469b039-8a01-4370-bdfb-4f8d9b5a0c07" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:appointmentStart[1]</con:xpath><con:element>appointmentStart</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${MIDAF-UTCConversion#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/MIDAFSTART[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:appointmentEnd[1]</con:xpath><con:element>appointmentEnd</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${MIDAF-UTCConversion#ResponseAsXml#//Results[1]/ResultSet[2]/Row[1]/MIDAFEND[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://spasita.test.com/webapps/citypd-spa/api/v1/shipment">
+   <collectIndicator>N</collectIndicator>
+   <currentTerminal>532</currentTerminal>
+   <currentTrailer null="true"/>
+   <scac null="true"/>
+   <customerCode>818B</customerCode>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>2</deliveryZoneCode>
+   <destinationTerminal>532</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <numberOfHandlingUnits>5</numberOfHandlingUnits>
+   <numberOfPallets>6.35</numberOfPallets>
+   <numberOfShipmentPieces>0</numberOfShipmentPieces>
+   <onSiteContactName>NITA</onSiteContactName>
+   <onSiteContactPhoneNumber>405-496-2889</onSiteContactPhoneNumber>
+   <originTerminalID>658</originTerminalID>
+   <poisonIndicator>N</poisonIndicator>
+   <poNumber null="true"/>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>7381718530</proNumber>
+   <quoteID null="true"/>
+   <serviceDate>2018-03-22</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>PLT</shipmentPieceType>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServicesIndicator>N</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>2803</weight>
+   <deliveryDate null="true"/>
+   <shipper>
+      <bizID>80505635080</bizID>
+      <businessName>HOTSTART</businessName>
+      <city>SPOKANE</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>WA</state>
+      <streetAddressLine1>5723 E ALKI AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>99212</zipcode>
+   </shipper>
+   <consignee>
+      <bizID>77338636560</bizID>
+      <businessName>USA COMPRESSION</businessName>
+      <city>MOUNDS</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>OK</state>
+      <streetAddressLine1>10096 HECTORVILLE RD</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>74047</zipcode>
+   </consignee>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>02647000</propertyValue>
+      </e>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>02647000</propertyValue>
+      </e>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>APPT</propertyValue>
+      </e>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>APPT</propertyValue>
+      </e>
+   </infoStatusList>
+   <appointmentStart>2018-03-22 18:45:00</appointmentStart>
+   <appointmentEnd>2018-03-22 21:45:00</appointmentEnd>
+   <openTime null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <custLunchStart null="true"/>
+   <custLunchEnd null="true"/>
+   <skelIndicator>N</skelIndicator>
+   <modifiedBy>SHP261</modifiedBy>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="shipmentKey" value="${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHIPMENT_KEY[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="datasink" name="ApptDateTestResult" id="2ac2ce15-4e1f-4c35-84ac-647d37498fa9"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>DlvyApptStartnEndDateTestResultMaster.xlsx</file><outfile>DlvyApptStartnEndDateTestResultMaster.xlsx</outfile><worksheet>Sheet1</worksheet><cell>A2</cell><evaluateFormulas>false</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>ExcelPro</con:name><con:value>${SpreadSheet#PRO}</con:value></con:property><con:property><con:name>BDDRecordkey</con:name><con:value>${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_RECORD_KEY[1]}</con:value></con:property><con:property><con:name>LegacyRecordKey</con:name><con:value>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/RECORD_KEY[1]}</con:value></con:property><con:property><con:name>M204RecordKey</con:name><con:value>${MIDAF-ApptDate#Response#//dataOutput[1]/record[1]/RECORD.KEY[1]}</con:value></con:property><con:property><con:name>QunitiqproNm</con:name><con:value>${ApptDatesQuintiq#Response#$['proNumber']}</con:value></con:property><con:property><con:name>BDDDlvyApptStart</con:name><con:value>${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_START_TS[1]}</con:value></con:property><con:property><con:name>LegacyDlvyApptStart</con:name><con:value>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_START_TS[1]}</con:value></con:property><con:property><con:name>M204DlvyApptStart</con:name><con:value>${MIDAF-UTCConversion#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/MIDAFSTART[1]}</con:value></con:property><con:property><con:name>QuintiqDlvyApptStart</con:name><con:value>${ApptDatesQuintiq#Response#$['appointmentStart']}</con:value></con:property><con:property><con:name>BDDDlvyApptEnd</con:name><con:value>${ApptSnEDateBDDDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_END_TS[1]}</con:value></con:property><con:property><con:name>LegacyDlvyApptEnd</con:name><con:value>${ApptSnEDateLegacyDB#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/DELIVERY_APPOINTMENT_END_TS[1]}</con:value></con:property><con:property><con:name>M204DlvyApptEnd</con:name><con:value>${MIDAF-UTCConversion#ResponseAsXml#//Results[1]/ResultSet[2]/Row[1]/MIDAFEND[1]}</con:value></con:property><con:property><con:name>QuintiqDlvyApptEnd</con:name><con:value>${ApptDatesQuintiq#Response#$['appointmentEnd']}</con:value></con:property><con:property><con:name>M204Status</con:name><con:value>${=testRunner.runTestStepByName("MIDAF-UTCConversion").getStatus()}</con:value></con:property><con:property><con:name>QuintiqStatus</con:name><con:value>${=testRunner.runTestStepByName("ApptDatesQuintiq").getStatus()}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="Iterate" id="728860a2-c942-40a7-8982-e36ca08006a9"><con:settings/><con:config><dataSourceStep>SpreadSheet</dataSourceStep><targetStep>ApptSnEDateLegacyDB</targetStep></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>77caa940-62de-43ae-992a-e403bf7a928d</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>32cc87a0-4a47-4dee-95a8-76438ba8bcf5</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>7485fa27-e322-4823-a3b4-9ea79537adcc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d2733791-acac-40b9-82b4-95f633e41b9b</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>67e5cdc6-1a41-40d1-92f6-53e84a8324b4</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>ac1d544a-a982-468b-b7c7-e594b1b6c1f3</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:environmentSpec><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testCase>

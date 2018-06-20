@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="wsdl_getPackageInfo_Binder" type="wsdl" bindingName="{http://yvmesbdev.test.com/wsdl:getPackageInfo}wsdl_getPackageInfo_Binder" soapVersion="1_1" anonymous="optional" definition="http://yvmesbdev.test.com:5555/ws/wsdl:getPackageInfo?WSDL" id="2c19402a-27dd-4a16-8108-48b15eb673aa" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2c19402a-27dd-4a16-8108-48b15eb673aafileName">wsdl_getPackageInfo_Binder</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://yvmesbdev.test.com:5555/ws/wsdl:getPackageInfo?WSDL"><con:part><con:url>http://yvmesbdev.test.com:5555/ws/wsdl:getPackageInfo?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="getPackageInfo" targetNamespace="http://yvmesbdev.test.com/wsdl:getPackageInfo" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://yvmesbdev.test.com/wsdl:getPackageInfo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://yvmesbdev.test.com/wsdl:getPackageInfo">
+      <xsd:element name="getPackageVersions" type="tns:getPackageVersions"/>
+      <xsd:element name="getPackageVersionsResponse" type="tns:getPackageVersionsResponse"/>
+      <xsd:complexType name="getPackageVersions">
+        <xsd:sequence></xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="getPackageVersionsResponse">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="getPackageVersionsOutput" nillable="true" type="tns:getPackageVersionsOutput"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="getPackageVersionsOutput">
+        <xsd:sequence>
+          <xsd:element name="packageName" nillable="true" type="xsd:string"/>
+          <xsd:element name="version" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getPackageInfo_PortType_getPackageVersionsResponse">
+    <wsdl:part name="parameters" element="tns:getPackageVersionsResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPackageInfo_PortType_getPackageVersions">
+    <wsdl:part name="parameters" element="tns:getPackageVersions"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="getPackageInfo_PortType">
+    <wsdl:operation name="getPackageVersions">
+      <wsdl:input message="tns:getPackageInfo_PortType_getPackageVersions"></wsdl:input>
+      <wsdl:output message="tns:getPackageInfo_PortType_getPackageVersionsResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsdl_getPackageInfo_Binder" type="tns:getPackageInfo_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getPackageVersions">
+      <soap:operation soapAction="wsdl_getPackageInfo_Binder_getPackageVersions" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsdl.getPackageInfo">
+    <wsdl:port name="wsdl_getPackageInfo_Port" binding="tns:wsdl_getPackageInfo_Binder">
+      <soap:address location="http://yvmesbdev.test.com:5555/ws/wsdl.getPackageInfo/wsdl_getPackageInfo_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://d1204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:endpoint>http://d1204-trust.ago.roadway.com/idu800?prmUser=CRMUSER</con:endpoint><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:endpoint>http://d3204-trust.ago.roadway.com/ida200.xml?prmUser=CRMUSER</con:endpoint><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:endpoint>http://wmesbdev2.test.com:5555/invoke/test_ESB_Public.flow.inbound._rest:_get</con:endpoint><con:endpoint>http://yvmesbdev.test.com:5555/ws/wsdl.getPackageInfo/wsdl_getPackageInfo_Port</con:endpoint></con:endpoints><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:interface>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1f5062ca-ee8f-4f3c-8805-e9bde3b2a17a" discardOkResults="false" failOnError="false" failTestCaseOnErrors="false" keepSession="false" name="CosigneeDetails TestCase" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="1f5062ca-ee8f-4f3c-8805-e9bde3b2a17afileName">CosigneeDetails-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Authentication" id="b3994049-d969-4e1c-a110-8500bf01c178"><con:settings/><con:config service="REST Service 5" resourcePath="/webapps/security-spa/api/security/authenticate" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authentication" id="eb90dad0-674b-44b3-bf33-7a9456c529b9" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://javatest.test.com:4035</con:endpoint><con:request>username=test\dccBatch&amp;password=test</con:request><con:originalUri>https://javatest.test.com/webapps/security-spa/api/security/authenticate</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="datasource" name="SpreadSheet" id="420055b1-9817-4f68-bf9b-fbc458dd7d7a"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>${#Project#SpreadSheetPath}</file><worksheet>Main</worksheet><cell>A4</cell><ignoreEmpty>false</ignoreEmpty><evaluateFormulas>false</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>PRO</con:property><con:property>Status</con:property><con:property>PU Date</con:property><con:property>Type</con:property><con:property>Origin</con:property><con:property>Trailer Scac</con:property><con:property>Trailer</con:property><con:property>Shipper- Name</con:property><con:property>Shipper- Str#</con:property><con:property>Shipper- Phone #</con:property><con:property>Shipper- Number</con:property><con:property>Shipper- Dir1</con:property><con:property>Shipper- Street</con:property><con:property>Shipper- Suf</con:property><con:property>Shipper- Dir2</con:property><con:property>Shipper- Unit</con:property><con:property>Shipper- Type</con:property><con:property>Shipper- City</con:property><con:property>Shipper- State</con:property><con:property>Shipper- Zip</con:property><con:property>Consignee- Name</con:property><con:property>Consignee- Str#</con:property><con:property>Consignee- Phone #</con:property><con:property>Consignee- C/O</con:property><con:property>Consignee- Show</con:property><con:property>Consignee- Booth#</con:property><con:property>Consignee- Number</con:property><con:property>Consignee- Dir1</con:property><con:property>Consignee- Street</con:property><con:property>Consignee- Suf</con:property><con:property>Consignee- Dir2</con:property><con:property>Consignee- Unit</con:property><con:property>Consignee- Type</con:property><con:property>Consignee- City</con:property><con:property>Consignee- State</con:property><con:property>Consignee- Zip</con:property><con:property>Terms</con:property><con:property>GSV</con:property><con:property>NTFY</con:property><con:property>HOMD</con:property><con:property>LFTD</con:property><con:property>ID</con:property><con:property>FAF</con:property><con:property>INTR</con:property><con:property>CBL</con:property><con:property>GBL</con:property><con:property>BOND</con:property><con:property>SIGN</con:property><con:property>QUOTEID</con:property><con:property>PROMO</con:property><con:property>ITEM#</con:property><con:property>G/D</con:property><con:property>REF1 #</con:property><con:property>Ref1 Type</con:property><con:property>Ref2 #</con:property><con:property>Ref2 Type</con:property><con:property>Third Party- Name</con:property><con:property>Third Party- C/O</con:property><con:property>Third Party- Role</con:property><con:property>Third Party- Number</con:property><con:property>Third Party- Dir1</con:property><con:property>Third Party- Street</con:property><con:property>Third Party- Suf</con:property><con:property>Third Party- Dir2</con:property><con:property>Third Party- Unit</con:property><con:property>Third Party- Type</con:property><con:property>Third Party- Store</con:property><con:property>Third Party- City</con:property><con:property>Third Party- State</con:property><con:property>Third Party- Zip</con:property><con:property>NITE</con:property><con:property>FOOD</con:property><con:property>H/U1</con:property><con:property>PKG1</con:property><con:property>WGT1</con:property><con:property>PCS1</con:property><con:property>UOM1</con:property><con:property>CL1</con:property><con:property>NMFC1</con:property><con:property>SUB1</con:property><con:property>CFT1</con:property><con:property>DENS1</con:property><con:property>DESCR1A</con:property><con:property>DESCR1B</con:property><con:property>H/U2</con:property><con:property>PKG2</con:property><con:property>WGT2</con:property><con:property>PCS2</con:property><con:property>UOM2</con:property><con:property>CL2</con:property><con:property>NMFC2</con:property><con:property>SUB2</con:property><con:property>CFT2</con:property><con:property>DENS2</con:property><con:property>DESCR2A</con:property><con:property>DESCR2B</con:property><con:property>H/U3</con:property><con:property>PKG3</con:property><con:property>WGT3</con:property><con:property>PCS3</con:property><con:property>UOM3</con:property><con:property>CL3</con:property><con:property>NMFC3</con:property><con:property>SUB3</con:property><con:property>CFT3</con:property><con:property>DENS3</con:property><con:property>DESCR3A</con:property><con:property>DESCR3B</con:property><con:property>STC/SLC</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="jdbc" name="CosigneeBDDDataBase" id="05094f50-0373-44f4-adef-cfcebbc79a21"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>BDD</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\ads;databaseName=OPS_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>Select Distinct s.Pro_NB,s.Shipment_key, s.M204_SHP_TAG_ID,scr1.M204_BUS_TAG_ID, sc1.Business_NM,
+  sc1.Street_Address_TX, sc1.City_NM, sc1.State_Province_Abbreviation_CD,
+  sc1.Postal_CD
+From SHIP.Shipment s Left Outer Join
+  SHIP.Shipment_Customer_Role_VW scr1 On scr1.Shipment_KEY = s.Shipment_KEY And
+    ((scr1.Customer_Role_Type_CD = 'C' Or scr1.Customer_Role_Type_CD = 'R'))
+  Left Outer Join
+  SHIP.Shipment_Customer_VW sc1 On (sc1.Shipment_Customer_Role_KEY =
+      scr1.Shipment_Customer_Role_KEY)
+Where s.Pro_NB = '${SpreadSheet#PRO}'</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="ConsigneeLegacyDataBase" id="959999ad-29ee-46c7-b0f7-ee16c69d6685"><con:settings><con:setting id="prettyPrintResponse">true</con:setting></con:settings><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>Legacy</con:dbConnectionName><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://Ywsqltest\Legacy;databaseName=Legacy_SA;integratedSecurity= true</con:connectionString><con:password/><con:connectionProperties/><con:query>Select m.WGP_ID_NBR, m.WGP_SHP_TAG,s.[SHP_BUS_TAG], s.SHP_NM_RPRTD, s.SHP_STREET_RPRTD,
+  s.SHP_CITY_RPRTD, s.SHP_ST_ABBR_RPRTD, s.SHP_ZIP_RPRTD
+From Legacy.M204_WGP m Left Outer Join
+  Legacy.M204_BSR s On m.WGP_SHP_TAG = s.SHP_TAG And ((s.SHP_BUS_ROLE = 'C' Or
+        s.SHP_BUS_ROLE = 'R'))
+Where m.WGP_ID_NBR = '${SpreadSheet#PRO}'</con:query><con:assertion type="MessageContentAssertion" id="ef3ac704-272f-4b40-91aa-ecb363bb1802" name="BDD-Legacy-Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/WGP_ID_NBR[1]</con:xpath><con:element>WGP_ID_NBR</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/PRO_NB[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/WGP_SHP_TAG[1]</con:xpath><con:element>WGP_SHP_TAG</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_SHP_TAG_ID[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/SHP_BUS_TAG[1]</con:xpath><con:element>SHP_BUS_TAG</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_BUS_TAG_ID[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/SHP_NM_RPRTD[1]</con:xpath><con:element>SHP_NM_RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BUSINESS_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/SHP_STREET_RPRTD[1]</con:xpath><con:element>SHP_STREET_RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STREET_ADDRESS_TX[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/SHP_CITY_RPRTD[1]</con:xpath><con:element>SHP_CITY_RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/CITY_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/SHP_ST_ABBR_RPRTD[1]</con:xpath><con:element>SHP_ST_ABBR_RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STATE_PROVINCE_ABBREVIATION_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//Results[1]/ResultSet[1]/Row[1]/SHP_ZIP_RPRTD[1]</con:xpath><con:element>SHP_ZIP_RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/POSTAL_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Results>
+   <ResultSet fetchSize="128">
+      <Row rowNumber="1">
+         <WGP_ID_NBR>3566350805</WGP_ID_NBR>
+         <WGP_SHP_TAG>2SHP1803191114535730</WGP_SHP_TAG>
+         <SHP_BUS_TAG>08333351204</SHP_BUS_TAG>
+         <SHP_NM_RPRTD>SOUTHERN GLASS CO</SHP_NM_RPRTD>
+         <SHP_STREET_RPRTD>915 N HILL DR</SHP_STREET_RPRTD>
+         <SHP_CITY_RPRTD>NASHVILLE</SHP_CITY_RPRTD>
+         <SHP_ST_ABBR_RPRTD>TN</SHP_ST_ABBR_RPRTD>
+         <SHP_ZIP_RPRTD>37207</SHP_ZIP_RPRTD>
+      </Row>
+   </ResultSet>
+</Results>]]></con:originalMessage></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="request" id="1a14b1ae-55c3-4a3d-b0b0-5290e8e215b6" name="MIDAF - BSRCosigneeInfo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>wsdl_getPackageInfo_Binder</con:interface><con:operation>MIDAF</con:operation><con:request name="MIDAF - BSRCosigneeInfo" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="eab69d0a-87fd-445d-a369-5015b176ba20"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://satest-trust.ago.test.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>BSR</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>SHP.TAG</name>
+    <value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_SHP_TAG_ID[1]}</value>
+      <operator>EQ</operator>
+    </field>
+       <field>
+      <name>SHP.BUS.ROLE</name>
+      <value>R</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>]]></con:request><con:assertion type="MessageContentAssertion" id="70dad6c9-1a06-43ab-85af-1391422ab1ac" name="MiDAF-BDD-Assert"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.NM.RPRTD[1]</con:xpath><con:element>SHP.NM.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BUSINESS_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.STREET.RPRTD[1]</con:xpath><con:element>SHP.STREET.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STREET_ADDRESS_TX[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.CITY.RPRTD[1]</con:xpath><con:element>SHP.CITY.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/CITY_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.ST.ABBR.RPRTD[1]</con:xpath><con:element>SHP.ST.ABBR.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STATE_PROVINCE_ABBREVIATION_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.ZIP.RPRTD[1]</con:xpath><con:element>SHP.ZIP.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/POSTAL_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.TAG[1]</con:xpath><con:element>SHP.TAG</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_SHP_TAG_ID[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.BUS.TAG[1]</con:xpath><con:element>SHP.BUS.TAG</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_BUS_TAG_ID[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<dataOutput>
+   <hdr>
+      <returnCode>0000</returnCode>
+      <returnText>Done</returnText>
+      <recordCount>1</recordCount>
+   </hdr>
+   <record>
+      <CREATE.DATE>20160912</CREATE.DATE>
+      <SHP.TAG>2SHP1609121139115909</SHP.TAG>
+      <SHP.BUS.ROLE>T</SHP.BUS.ROLE>
+      <SHP.BUS.TAG>76254746740</SHP.BUS.TAG>
+      <SHP.LOCAL.ACT.CD.RPRTD>0461</SHP.LOCAL.ACT.CD.RPRTD>
+      <SHP.BUS.SLS.ORZ>809</SHP.BUS.SLS.ORZ>
+      <SHP.NM.RPRTD>S&amp;S FENCING (SPORTAFENCE)</SHP.NM.RPRTD>
+      <SHP.ADDR.RPRTD encoding="base64">9/T0+CUl2cXF4sUl2cQlJSUl</SHP.ADDR.RPRTD>
+      <SHP.STREET.RPRTD>7448 REESE RD</SHP.STREET.RPRTD>
+      <SHP.CITY.RPRTD>SACRAMENTO</SHP.CITY.RPRTD>
+      <SHP.ST.ABBR.RPRTD>CA</SHP.ST.ABBR.RPRTD>
+      <SHP.ZIP.RPRTD>95828</SHP.ZIP.RPRTD>
+      <BSR.RESOLVE.IND>S</BSR.RESOLVE.IND>
+      <DTS.DTTMSP>20160912113911709</DTS.DTTMSP>
+      <RECORD.KEY>201609121139117090376877802786</RECORD.KEY>
+   </record>
+</dataOutput>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="221e209f-99dd-4d44-a2f6-1c5040c228e6" name="MiDAF-Legacy-Assert"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.NM.RPRTD[1]</con:xpath><con:element>SHP.NM.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_NM_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.STREET.RPRTD[1]</con:xpath><con:element>SHP.STREET.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_STREET_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.CITY.RPRTD[1]</con:xpath><con:element>SHP.CITY.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_CITY_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.ST.ABBR.RPRTD[1]</con:xpath><con:element>SHP.ST.ABBR.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ST_ABBR_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.ZIP.RPRTD[1]</con:xpath><con:element>SHP.ZIP.RPRTD</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ZIP_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.TAG[1]</con:xpath><con:element>SHP.TAG</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_SHP_TAG[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>//dataOutput[1]/record[1]/SHP.BUS.TAG[1]</con:xpath><con:element>SHP.BUS.TAG</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_BUS_TAG[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<dataOutput>
+   <hdr>
+      <returnCode>0000</returnCode>
+      <returnText>Done</returnText>
+      <recordCount>1</recordCount>
+   </hdr>
+   <record>
+      <CREATE.DATE>20160912</CREATE.DATE>
+      <SHP.TAG>2SHP1609121139115909</SHP.TAG>
+      <SHP.BUS.ROLE>T</SHP.BUS.ROLE>
+      <SHP.BUS.TAG>76254746740</SHP.BUS.TAG>
+      <SHP.LOCAL.ACT.CD.RPRTD>0461</SHP.LOCAL.ACT.CD.RPRTD>
+      <SHP.BUS.SLS.ORZ>809</SHP.BUS.SLS.ORZ>
+      <SHP.NM.RPRTD>S&amp;S FENCING (SPORTAFENCE)</SHP.NM.RPRTD>
+      <SHP.ADDR.RPRTD encoding="base64">9/T0+CUl2cXF4sUl2cQlJSUl</SHP.ADDR.RPRTD>
+      <SHP.STREET.RPRTD>7448 REESE RD</SHP.STREET.RPRTD>
+      <SHP.CITY.RPRTD>SACRAMENTO</SHP.CITY.RPRTD>
+      <SHP.ST.ABBR.RPRTD>CA</SHP.ST.ABBR.RPRTD>
+      <SHP.ZIP.RPRTD>95828</SHP.ZIP.RPRTD>
+      <BSR.RESOLVE.IND>S</BSR.RESOLVE.IND>
+      <DTS.DTTMSP>20160912113911709</DTS.DTTMSP>
+      <RECORD.KEY>201609121139117090376877802786</RECORD.KEY>
+   </record>
+</dataOutput>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:username/><con:password/><con:domain/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="restrequest" name="Quintiq-Consignee" id="c87a5892-0620-4d01-a39e-1ebdc602c9b1"><con:settings/><con:config service="REST Service 6" resourcePath="/webapps/citypd-spa/api/v1/shipment" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Quintiq-Consignee" id="bea16df4-5907-422a-b2a7-edbfed68a3c6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-authorization" value="YRC ${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting><con:setting id="com.eviware.soapui.settings.CommonSettings@entitizeProperties">false</con:setting><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@strip-whitespaces">true</con:setting></con:settings><con:endpoint>https://spasita.test.com</con:endpoint><con:request/><con:originalUri>https://spasita.test.com/webapps/citypd-spa/api/v1/shipment</con:originalUri><con:assertion type="MessageContentAssertion" id="080d5224-2a3c-439d-b47b-c1364af86c9d" name="Quintiq-BDD-Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:businessName[1]</con:xpath><con:element>businessName</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BUSINESS_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:city[1]</con:xpath><con:element>city</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/CITY_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:state[1]</con:xpath><con:element>state</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STATE_PROVINCE_ABBREVIATION_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:streetAddressLine1[1]</con:xpath><con:element>streetAddressLine1</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STREET_ADDRESS_TX[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:zipcode[1]</con:xpath><con:element>zipcode</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/POSTAL_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:bizID[1]</con:xpath><con:element>bizID</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_BUS_TAG_ID[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://spasita.test.com/webapps/citypd-spa/api/v1/shipment">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID>03092154609</bizID>
+      <businessName>CONOCOPHILLIPS</businessName>
+      <city>BARTLESVILLE</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>OK</state>
+      <streetAddressLine1>411 S KEELER AVE STE B46AB</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>74004</zipcode>
+   </consignee>
+   <currentTerminal>830</currentTerminal>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode>7590</customerCode>
+   <deliveryDate null="true"/>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>2</deliveryZoneCode>
+   <destinationTerminal>532</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>99999809</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy null="true"/>
+   <numberOfHandlingUnits>3</numberOfHandlingUnits>
+   <numberOfPallets>3.00</numberOfPallets>
+   <numberOfShipmentPieces>3</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>830</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>6964853732</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2017-11-28</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>PLT</shipmentPieceType>
+   <shipper>
+      <bizID>80505088052</bizID>
+      <businessName>SATORI SEAL CO</businessName>
+      <city>RANCHO CUCAMONGA</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>CA</state>
+      <streetAddressLine1>8455 UTICA AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>91730</zipcode>
+   </shipper>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServicesIndicator>N</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>500</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="bbe8695b-13d3-4de5-8323-3766fea49999" name="Quintiq-Legacy-Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:businessName[1]</con:xpath><con:element>businessName</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_NM_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:city[1]</con:xpath><con:element>city</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_CITY_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:state[1]</con:xpath><con:element>state</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ST_ABBR_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:streetAddressLine1[1]</con:xpath><con:element>streetAddressLine1</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_STREET_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:zipcode[1]</con:xpath><con:element>zipcode</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ZIP_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://spasita.test.com/webapps/citypd-spa/api/v1/shipment';
+//ns1:Response[1]/ns1:consignee[1]/ns1:bizID[1]</con:xpath><con:element>bizID</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_BUS_TAG[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://spasita.test.com/webapps/citypd-spa/api/v1/shipment">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID>03092154609</bizID>
+      <businessName>CONOCOPHILLIPS</businessName>
+      <city>BARTLESVILLE</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>OK</state>
+      <streetAddressLine1>411 S KEELER AVE STE B46AB</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>74004</zipcode>
+   </consignee>
+   <currentTerminal>830</currentTerminal>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode>7590</customerCode>
+   <deliveryDate null="true"/>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>2</deliveryZoneCode>
+   <destinationTerminal>532</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>NMFC</propertyName>
+         <propertyValue>99999809</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy null="true"/>
+   <numberOfHandlingUnits>3</numberOfHandlingUnits>
+   <numberOfPallets>3.00</numberOfPallets>
+   <numberOfShipmentPieces>3</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>830</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>Y</prepaidIndicator>
+   <proNumber>6964853732</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2017-11-28</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType>PLT</shipmentPieceType>
+   <shipper>
+      <bizID>80505088052</bizID>
+      <businessName>SATORI SEAL CO</businessName>
+      <city>RANCHO CUCAMONGA</city>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state>CA</state>
+      <streetAddressLine1>8455 UTICA AVE</streetAddressLine1>
+      <streetAddressLine2 null="true"/>
+      <zipcode>91730</zipcode>
+   </shipper>
+   <signatureRequiredIndicator>N</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd null="true"/>
+   <specialServiceDeliveryWindowStart null="true"/>
+   <specialServicesIndicator>N</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>500</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="shipmentKey" value="${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHIPMENT_KEY[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Quintiq-Cosignee1" id="3fc75ca4-a756-403d-8079-b954261e54a6" disabled="true"><con:settings/><con:config service="REST Service 1" resourcePath="/webapps/citypd-spa/api/v1/shipments" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Quintiq-Cosignee1" id="e026a6f5-7d47-435c-b77c-24d028f391e0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-authorization" value="${Authentication#HarResponse#$['content']['text']}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://spasita.test.com</con:endpoint><con:request/><con:originalUri>http://sb-sita.test.com/citypd/api/v1/shipment/</con:originalUri><con:assertion type="MessageContentAssertion" id="554d8d0e-5407-4b09-a270-033ddf6bf673" name="Quintiq-BDD-Asertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:businessName[1]</con:xpath><con:element>businessName</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BUSINESS_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:city[1]</con:xpath><con:element>city</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/CITY_NM[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:state[1]</con:xpath><con:element>state</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STATE_PROVINCE_ABBREVIATION_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:streetAddressLine1[1]</con:xpath><con:element>streetAddressLine1</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STREET_ADDRESS_TX[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:zipcode[1]</con:xpath><con:element>zipcode</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/POSTAL_CD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:proNumber[1]</con:xpath><con:element>proNumber</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${SpreadSheet#PRO}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="http://sb-sita.test.com/citypd/api/v1/shipment/">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID null="true"/>
+      <businessName null="true"/>
+      <city null="true"/>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state null="true"/>
+      <streetAddressLine1 null="true"/>
+      <streetAddressLine2 null="true"/>
+      <zipcode null="true"/>
+   </consignee>
+   <currentTerminal null="true"/>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode null="true"/>
+   <deliveryDate>2016-09-13 05:00:00</deliveryDate>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>1</deliveryZoneCode>
+   <destinationTerminal>621</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>ZZZZ</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>GDEL</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>SHOW</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy>CAR061</modifiedBy>
+   <numberOfHandlingUnits>1</numberOfHandlingUnits>
+   <numberOfPallets>1.00</numberOfPallets>
+   <numberOfShipmentPieces>0</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>809</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>N</prepaidIndicator>
+   <proNumber>4931875473</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2016-09-16</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType null="true"/>
+   <shipper null="true"/>
+   <signatureRequiredIndicator>Y</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd>2016-09-16 22:00:00</specialServiceDeliveryWindowEnd>
+   <specialServiceDeliveryWindowStart>2016-09-16 12:00:00</specialServiceDeliveryWindowStart>
+   <specialServicesIndicator>N</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>395</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" name="Quintiq-Legacy-Asertion" id="3af98c55-3c6e-4be5-ba19-02ba56a58061"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:businessName[1]</con:xpath><con:element>businessName</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_NM_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:city[1]</con:xpath><con:element>city</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_CITY_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:state[1]</con:xpath><con:element>state</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ST_ABBR_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:streetAddressLine1[1]</con:xpath><con:element>streetAddressLine1</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_STREET_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:consignee[1]/ns1:zipcode[1]</con:xpath><con:element>zipcode</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ZIP_RPRTD[1]}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='http://sb-sita.test.com/citypd/api/v1/shipment/';
+//ns1:Response[1]/ns1:proNumber[1]</con:xpath><con:element>proNumber</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${SpreadSheet#PRO}</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="http://sb-sita.test.com/citypd/api/v1/shipment/">
+   <appointmentEnd null="true"/>
+   <appointmentStart null="true"/>
+   <closedTime null="true"/>
+   <codAmount null="true"/>
+   <collectIndicator>N</collectIndicator>
+   <consignee>
+      <bizID null="true"/>
+      <businessName null="true"/>
+      <city null="true"/>
+      <contactName null="true"/>
+      <countryCode null="true"/>
+      <state null="true"/>
+      <streetAddressLine1 null="true"/>
+      <streetAddressLine2 null="true"/>
+      <zipcode null="true"/>
+   </consignee>
+   <currentTerminal null="true"/>
+   <currentTrailer null="true"/>
+   <custLunchEnd null="true"/>
+   <custLunchStart null="true"/>
+   <customerCode null="true"/>
+   <deliveryDate>2016-09-13 05:00:00</deliveryDate>
+   <deliveryNotes null="true"/>
+   <deliveryZoneCode>1</deliveryZoneCode>
+   <destinationTerminal>621</destinationTerminal>
+   <dockDoorAssignment null="true"/>
+   <exclusiveUserOrSealDividerIndicator>N</exclusiveUserOrSealDividerIndicator>
+   <foodIndicator>N</foodIndicator>
+   <freezableIndicator>N</freezableIndicator>
+   <hazmatIndicator>N</hazmatIndicator>
+   <inbondIndicator>N</inbondIndicator>
+   <infoStatusList>
+      <e>
+         <propertyName>DELIVERYCODES</propertyName>
+         <propertyValue>ZZZZ</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>GDEL</propertyValue>
+      </e>
+      <e>
+         <propertyName>SPECIALSERVICEINDICATOR</propertyName>
+         <propertyValue>SHOW</propertyValue>
+      </e>
+   </infoStatusList>
+   <liftgateRequiredIndicator>N</liftgateRequiredIndicator>
+   <modifiedBy>CAR061</modifiedBy>
+   <numberOfHandlingUnits>1</numberOfHandlingUnits>
+   <numberOfPallets>1.00</numberOfPallets>
+   <numberOfShipmentPieces>0</numberOfShipmentPieces>
+   <onSiteContactName null="true"/>
+   <onSiteContactPhoneNumber null="true"/>
+   <openTime null="true"/>
+   <originTerminalID>809</originTerminalID>
+   <poNumber null="true"/>
+   <poisonIndicator>N</poisonIndicator>
+   <prepaidIndicator>N</prepaidIndicator>
+   <proNumber>4931875473</proNumber>
+   <quoteID null="true"/>
+   <scac null="true"/>
+   <serviceDate>2016-09-16</serviceDate>
+   <shipmentComments null="true"/>
+   <shipmentContactPhoneNumber null="true"/>
+   <shipmentPieceType null="true"/>
+   <shipper null="true"/>
+   <signatureRequiredIndicator>Y</signatureRequiredIndicator>
+   <skelIndicator>N</skelIndicator>
+   <specialInstructions null="true"/>
+   <specialServiceDeliveryWindowEnd>2016-09-16 22:00:00</specialServiceDeliveryWindowEnd>
+   <specialServiceDeliveryWindowStart>2016-09-16 12:00:00</specialServiceDeliveryWindowStart>
+   <specialServicesIndicator>N</specialServicesIndicator>
+   <stopClass null="true"/>
+   <stopType null="true"/>
+   <trailerLengthRestriction null="true"/>
+   <weight>395</weight>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="shipmentKey" value="${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHIPMENT_KEY[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:environmentSpec><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="datasink" name="CosigneeTestResult" id="18c89e2c-c1ee-4b31-baa6-0f7419b5f9f4"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>${#TestCase#ConsigneeResults}</file><outfile>${#TestCase#ConsigneeResults}</outfile><worksheet>Sheet1</worksheet><cell>A2</cell><evaluateFormulas>false</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>ExcelPro</con:name><con:value>${SpreadSheet#PRO}</con:value></con:property><con:property><con:name>QuintiqProNum</con:name><con:value>${Quintiq-Consignee#Response#$['proNumber']}</con:value></con:property><con:property><con:name>BDDShipTag</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_SHP_TAG_ID[1]}</con:value></con:property><con:property><con:name>LegacyShipTag</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_SHP_TAG[1]}</con:value></con:property><con:property><con:name>M204ShipTag</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.TAG[1]}</con:value></con:property><con:property><con:name>BDDBizID</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_BUS_TAG_ID[1]}</con:value></con:property><con:property><con:name>BDDConsigneeName</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BUSINESS_NM[1]}</con:value></con:property><con:property><con:name>BDDStreetAddress</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STREET_ADDRESS_TX[1]}</con:value></con:property><con:property><con:name>BDDCity</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/CITY_NM[1]}</con:value></con:property><con:property><con:name>BDDState</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/STATE_PROVINCE_ABBREVIATION_CD[1]}</con:value></con:property><con:property><con:name>BDDZip</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/POSTAL_CD[1]}</con:value></con:property><con:property><con:name>LegacyBizID</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_BUS_TAG[1]}</con:value></con:property><con:property><con:name>LegacyCosigneeName</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_NM_RPRTD[1]}</con:value></con:property><con:property><con:name>LegacyStreetAddress</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_STREET_RPRTD[1]}</con:value></con:property><con:property><con:name>LegacyCity</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_CITY_RPRTD[1]}</con:value></con:property><con:property><con:name>LegacyState</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ST_ABBR_RPRTD[1]}</con:value></con:property><con:property><con:name>LegacyZip</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_ZIP_RPRTD[1]}</con:value></con:property><con:property><con:name>M204BizID</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.BUS.TAG[1]}</con:value></con:property><con:property><con:name>M204ConsigneeName</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.NM.RPRTD[1]}</con:value></con:property><con:property><con:name>M204StreetAddress</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.STREET.RPRTD[1]}</con:value></con:property><con:property><con:name>M204City</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.CITY.RPRTD[1]}</con:value></con:property><con:property><con:name>M204State</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.ST.ABBR.RPRTD[1]}</con:value></con:property><con:property><con:name>M204Zip</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.ZIP.RPRTD[1]}</con:value></con:property><con:property><con:name>QuintiqBizID</con:name><con:value>${Quintiq-Consignee#Response#$['consignee']['bizID']}</con:value></con:property><con:property><con:name>QuintiqConsigneeName</con:name><con:value>${Quintiq-Consignee#Response#$['consignee']['businessName']}</con:value></con:property><con:property><con:name>QuintiqStreetAddress</con:name><con:value>${Quintiq-Consignee#Response#$['consignee']['streetAddressLine1']}</con:value></con:property><con:property><con:name>QuintiqCity</con:name><con:value>${Quintiq-Consignee#Response#$['consignee']['city']}</con:value></con:property><con:property><con:name>QuintiqState</con:name><con:value>${Quintiq-Consignee#Response#$['consignee']['state']}</con:value></con:property><con:property><con:name>QuintiqZip</con:name><con:value>${Quintiq-Consignee#Response#$['consignee']['zipcode']}</con:value></con:property><con:property><con:name>MiDAFStatus</con:name><con:value>${=testRunner.runTestStepByName("MIDAF - BSRCosigneeInfo").getStatus()}</con:value></con:property><con:property><con:name>QuintiqStatus</con:name><con:value>${=testRunner.runTestStepByName("Quintiq-Consignee").getStatus()}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasink" name="MapAllData" id="783eccfe-6fbd-421c-b64a-c8d6010de985" disabled="true"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="SubReport"><con:configuration/></con:dataSink><con:properties><con:property><con:name>ExcelPro</con:name><con:value>${SpreadSheet#PRO}</con:value></con:property><con:property><con:name>LegacyShipTag</con:name><con:value>${LegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/WGP_SHP_TAG[1]}</con:value></con:property><con:property><con:name>BDDShipTag</con:name><con:value>${BDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/M204_SHP_TAG_ID[1]}</con:value></con:property><con:property><con:name>M204ShipTag</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.TAG[1]}</con:value></con:property><con:property><con:name>LegacyShipperName</con:name><con:value>${ConsigneeLegacyDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/SHP_NM_RPRTD[1]}</con:value></con:property><con:property><con:name>BDDShipperName</con:name><con:value>${CosigneeBDDDataBase#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BUSINESS_NM[1]}</con:value></con:property><con:property><con:name>M204</con:name><con:value>${MIDAF - BSRCosigneeInfo#Response#//dataOutput[1]/record[1]/SHP.NM.RPRTD[1]}</con:value></con:property><con:property><con:name>Status</con:name><con:value>${=testRunner.runTestStepByName("MIDAF - BSR ShipperInfo").getStatus()}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="Iterate" id="f47b83d4-5084-48af-9c3b-95d005417afc"><con:settings/><con:config><dataSourceStep>SpreadSheet</dataSourceStep><targetStep>CosigneeBDDDataBase</targetStep></con:config></con:testStep><con:properties><con:property><con:name>ConsigneeResults</con:name><con:value>D:\test\ROS-ReadyApi\TestResults\ConsigneeDetailsTestResultMaster.xlsx</con:value></con:property></con:properties><con:reportParameters/><con:breakPoints><con:testStepId>1a14b1ae-55c3-4a3d-b0b0-5290e8e215b6</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>959999ad-29ee-46c7-b0f7-ee16c69d6685</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>b3994049-d969-4e1c-a110-8500bf01c178</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>c87a5892-0620-4d01-a39e-1ebdc602c9b1</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:environmentSpec><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testCase>

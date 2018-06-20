@@ -1,0 +1,10 @@
+<con:reportTemplate xmlns:con="http://eviware.com/soapui/config">
+  <con:name>ShipperDetails</con:name>
+  <con:reportType>TESTCASE</con:reportType>
+  <con:reportLevel>SUBREPORT</con:reportLevel>
+  <con:nameInReport>TestCaseResultsOverviewReport</con:nameInReport>
+  <con:data xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:description>Overview of TestCase results within a TestSuite</con:description>
+  <con:scope>PROJECT</con:scope>
+  <con:dataSource>Test Results</con:dataSource>
+</con:reportTemplate>

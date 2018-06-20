@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation isOneWay="false" action="wsdl_getPackageInfo_Binder_getPackageVersions" name="MIDAF" bindingOperationName="getPackageVersions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="a381d685-ea74-4e31-a2fe-32164711d508" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a381d685-ea74-4e31-a2fe-32164711d508fileName">MIDAF</con:setting></con:settings><con:call name="IML" outgoingWss="" id="783acdf2-af28-4719-9316-3b288426aa15"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+  <programId>IDA200.XML</programId>
+  <Form>1</Form>
+  <fgInd>f</fgInd>
+  <file>IML</file>
+  <action>retrieval</action>
+  <subAction>none</subAction>
+  <format>CD</format>
+</hdr>
+<selection>
+    <field>
+    <name>IML.UNIT.NBR</name>
+    <value>290212</value>
+    <operator>eq</operator>
+  </field>
+  <field>
+    <name>IML.RSPNSBL.BUS.SCAC</name>
+    <value>RDWY</value>
+    <operator>eq</operator>
+  </field>
+</selection>
+</dataInput>]]></con:request><con:credentials><con:username/><con:password/><con:domain/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="EQP" id="2abe3215-0042-4031-9e5e-fc3aa6990cbc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://s1204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+  <programId>IDA200.XML</programId>
+  <Form>1</Form>
+  <fgInd>f</fgInd>
+  <file>EQP</file>
+  <action>retrieval</action>
+  <subAction>none</subAction>
+</hdr>
+<selection>
+  <field>
+    <name>Record.Key</name>
+    <value>201509230930355060013594202851</value>
+    <operator>eq</operator>
+  </field>
+</selection>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="PCM" id="b6711754-c6d9-4c68-a8e7-80fb118fc1dc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+  <programId>IDA200.XML</programId>
+  <Form>1</Form>
+  <fgInd>f</fgInd>
+  <file>PCM</file>
+  <action>retrieval</action>
+  <subAction>none</subAction>
+</hdr>
+<selection>
+  <field>
+    <name>PCM.TAG</name>
+    <value>2PCM1406172050344032</value>
+    <operator>eq</operator>
+  </field>
+</selection>
+</dataInput>]]></con:request><con:credentials><con:username/><con:password/><con:domain/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="WGP" id="e3915d7e-0480-4bdc-a861-2be69f09888c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d1204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>SHP8GRP</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>SHP.TAG</name>
+      <value>2SHP1103181834367975</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>
+]]></con:request><con:credentials><con:username/><con:password/><con:domain/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="getRailTrailers" id="df36cc7a-9e1d-457f-b05b-1e1481b0c9b3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://wmesbdev2.test.com:5555/invoke/test_ESB_Public.flow.inbound._rest:_get</con:endpoint><con:request><![CDATA[<trailerNumber></trailerNumber>
+<originTerminal></originTerminal>
+<destinationTerminal>x51</destinationTerminal>
+<page>1</page>
+<rows>50</rows>
+<sidx>HRS</sidx>
+<sord>DESC</sord>
+
+]]></con:request><con:credentials><con:username>svcwebdev</con:username><con:password>abcd1234</con:password><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile><con:username>svcwebdev</con:username><con:password>abcd1234</con:password></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="Join" id="cd8cbfb9-8851-4407-b64e-961d178539d5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <form>1</form>
+    <fgInd>f</fgInd>
+    <file>EQP</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+  <field>
+    <name>EQP.TRIP.DEST.ORZ.TAG</name>
+    <value>X54</value>
+    <operator>eq</operator>
+  </field>
+  </selection>
+  <join>
+      <file>
+         <name>IML</name>   
+         <fgInd>f</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.UNIT.NBR</srcfield>
+         <trgfield>IML.UNIT.NBR</trgfield>
+      </field>
+     <field>
+         <srcfield>EQP.RSPNSBL.BUS.SCAC</srcfield>
+         <trgfield>IML.RSPNSBL.BUS.SCAC</trgfield>
+      </field>
+  </join>
+<join>
+      <file>
+                <name>PCM</name>
+         <fgInd>f</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.PCM.TAG</srcfield>
+         <trgfield>PCM.TAG</trgfield>
+      </field>
+  </join>
+  <join>
+      <file>
+                <name>WGP8GRP</name>      
+         <fgInd>g</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.TAG</srcfield>
+         <trgfield>TWG.TO.EQP.TAG</trgfield>
+      </field>
+  </join>
+</dataInput>
+
+ 
+
+]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="fieldSelection" id="d3a5a646-101a-44cf-b6fa-562f50a88e71"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>BSR</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>EQP.TRIP.DEST.ORZ.TAG</name>
+      <value>x*</value>
+      <operator>like</operator>
+    </field>
+    <field>
+      <name>EQP.TRIP.ORIG.ORZ.TAG</name>
+      <value>x*</value>
+      <operator>like</operator>
+    </field>
+  </selection>
+  <returnfields>
+    <rfield>EQP.UNIT.NBR</rfield>
+    <rfield>PRP.EXT.LNGTH</rfield>
+    <rfield>EQP.ORIG.ORZ.TAG</rfield>
+    <rfield>EQP.DEST.ORZ.TAG</rfield>
+    <rfield>EQP.ACTVTY.STATUS</rfield>
+    <rfield>EQP.ACTL.CPCTY</rfield>
+    <rfield>EQP.NXT.STATUS.DT</rfield>
+    <rfield>EQP.NXT.STATUS.TIME</rfield>
+    <rfield>EQP.STATUS.DT</rfield>
+    <rfield>EQP.STATUS.TIME</rfield>
+  </returnfields>
+  <join>
+    <file>
+      <name>IML</name>
+      <fgInd>f</fgInd>
+    </file>
+    <field>
+      <srcfield>EQP.UNIT.NBR</srcfield>
+      <trgfield>IML.UNIT.NBR</trgfield>
+    </field>
+    <field>
+      <srcfield>EQP.RSPNSBL.BUS.SCAC</srcfield>
+      <trgfield>IML.RSPNSBL.BUS.SCAC</trgfield>
+    </field>
+    <returnfields>
+      <rfield>IML.RSPNSBL.BUS.SCAC</rfield>
+      <rfield>IML.DEST.CITY</rfield>
+      <rfield>DATE</rfield>
+      <rfield>TIME</rfield>
+    </returnfields>
+  </join>
+  <join>
+    <file>
+      <name>PCM</name>
+      <fgInd>f</fgInd>
+    </file>
+    <field>
+      <srcfield>EQP.PCM.TAG</srcfield>
+      <trgfield>PCM.TAG</trgfield>
+    </field>
+    <returnfields>
+      <rfield>PCM.ORIG.ORZ.RFRNC.CD</rfield>
+      <rfield>PCM.STDT</rfield>
+      <rfield>PCM.START.TIME</rfield>
+    </returnfields>
+  </join>
+  <join>
+    <file>
+      <name>WGPCGRP</name>
+      <fgInd>g</fgInd>
+    </file>
+    <field>
+      <srcfield>EQP.TAG</srcfield>
+      <trgfield>TWG.TO.EQP.TAG</trgfield>
+    </field>
+    <returnfields>
+      <rfield>WGP.SRVC.IND</rfield>
+      <rfield>WGP.TTL.ACTL.WGT</rfield>
+    </returnfields>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="joinEQP-IML" id="0abd55c5-792e-4a60-8048-c4185b8c1169"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d1204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>EQP</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>EQP.TRIP.DEST.ORZ.TAG</name>
+      <value>x50</value>
+      <operator>like</operator>
+    </field>
+    <field>
+      <name>EQP.TRIP.ORIG.ORZ.TAG</name>
+      <value>x*</value>
+      <operator>like</operator>
+    </field>
+  </selection>
+    <returnfields>
+    <rfield>EQP.TAG</rfield>
+  </returnfields>
+  <join>
+    <file>
+      <name>IML</name>
+      <fgInd>f</fgInd>
+    </file>
+    <field>
+      <srcfield>EQP.UNIT.NBR</srcfield>
+      <trgfield>IML.UNIT.NBR</trgfield>
+    </field>
+    <field>
+      <srcfield>EQP.RSPNSBL.BUS.SCAC</srcfield>
+      <trgfield>IML.RSPNSBL.BUS.SCAC</trgfield>
+    </field>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="joinEQP-PCM" id="6f962159-48b8-4762-827a-2481cc54340e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>EQP</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>EQP.TRIP.DEST.ORZ.TAG</name>
+      <value>x*</value>
+      <operator>like</operator>
+    </field>
+    <field>
+      <name>EQP.TRIP.ORIG.ORZ.TAG</name>
+      <value>x*</value>
+      <operator>like</operator>
+    </field>
+  </selection>
+    <returnfields>
+    <rfield>EQP.TAG</rfield>
+    <rfield>EQP.UNIT.NBR</rfield>
+    <rfield>PRP.EXT.LNGTH</rfield>
+    <rfield>EQP.ORIG.ORZ.TAG</rfield>
+    <rfield>EQP.DEST.ORZ.TAG</rfield>
+    <rfield>EQP.ACTVTY.STATUS</rfield>
+    <rfield>EQP.ACTL.CPCTY</rfield>
+    <rfield>EQP.NXT.STATUS.DT</rfield>
+    <rfield>EQP.NXT.STATUS.TIME</rfield>
+    <rfield>EQP.STATUS.DT</rfield>
+    <rfield>EQP.STATUS.TIME</rfield>
+  </returnfields>
+  <join>
+    <file>
+      <name>PCM</name>
+      <fgInd>f</fgInd>
+    </file>
+    <field>
+      <srcfield>EQP.PCM.TAG</srcfield>
+      <trgfield>PCM.TAG</trgfield>
+    </field>
+    <returnfields>
+      <rfield>PCM.ORIG.ORZ.RFRNC.CD</rfield>
+      <rfield>PCM.STDT</rfield>
+      <rfield>PCM.START.TIME</rfield>
+    </returnfields>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="joinEQP-WGP" id="9afe9bc9-f761-4b19-829d-5861a65757e9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <form>1</form>
+    <fgInd>f</fgInd>
+    <file>EQP</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>EQP.TRIP.DEST.ORZ.TAG</name>
+      <value>x50</value>
+      <operator>like</operator>
+    </field>
+    <field>
+      <name>EQP.TRIP.ORIG.ORZ.TAG</name>
+      <value>x*</value>
+      <operator>like</operator>
+    </field>
+  </selection>
+    <returnfields>
+    <rfield>EQP.TAG</rfield>
+  </returnfields>
+  <join>
+      <file>
+         <name>WGP8GRP</name>      
+         <fgInd>g</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.TAG</srcfield>
+         <trgfield>TWG.TO.EQP.TAG</trgfield>
+      </field>
+      <returnfields>
+      	<rfield>WGP.SRVC.IND</rfield>
+      	<rfield>WGP.TTL.ACTL.WGT</rfield>
+    </returnfields>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="ORZ-proPrefix" id="7e5ce409-59b7-47c5-bd83-6a11e00b42e2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>ida900</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>XORZ</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>ORZ.RFRNC.CD </name>
+      <value>ALL</value>
+      <operator>eq</operator>
+    </field>
+    <field>
+      <name>ORZ.CNTRL </name>
+      <value>002</value>
+      <operator>eq</operator>
+    </field>
+    <field>
+      <name>RECTYPE </name>
+      <value>ORZ.BASE</value>
+      <operator>eq</operator>
+    </field>
+  </selection>
+  <returnfields>
+    <rfield>ORZ.PRO.PREFIX</rfield>
+  </returnfields>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="getFieldNames" id="4d051c63-f169-4804-bdf6-7079aded935c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+<programId>IDA900.XML</programId>
+<Form>1</Form>
+<fgInd>f</fgInd>
+<file>FIELDREF</file>
+<action>retrieval</action>
+<subAction>none</subAction>
+</hdr>
+<selection>
+<field>
+<name>FILE</name>
+<value>EQP</value>
+<operator>EQ</operator>
+</field>
+</selection>
+<returnfields>
+<rfield>FIELD</rfield>
+<rfield>KEY</rfield>
+<rfield>ORD.NUM</rfield>
+<rfield>ORD.CHAR</rfield>
+</returnfields>
+</dataInput>
+
+]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="getPASbyDate" id="919cb97a-d91a-4b97-9d27-a8ae6b21e267"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+	<programId>IDA200.XML</programId>
+	<Form>1</Form>
+	<fgInd>f</fgInd>
+	<file>PAS</file>
+	<action>retrieval</action>
+	<subAction>none</subAction>
+	<format>CD</format>
+</hdr>
+<selection>
+	<field>
+		<name>DATE</name>
+		<value>20140927</value>
+		<operator>EQ</operator>
+	</field>
+
+</selection>
+ <returnfields>
+    <rfield>PAS.PU.REFERENCE.ID</rfield>
+    <rfield>PAS.PU.DT</rfield>
+    <rfield>PAS.PU.SHPR.NAME</rfield>
+    <rfield>PAS.STATUS.CODE</rfield>
+    <rfield>PAS.GROUP.ID</rfield>
+    <rfield>PAS.PU.PCS</rfield>
+    <rfield>PAS.PU.WGT</rfield>
+    <rfield>DATE</rfield>
+    <rfield>TIME</rfield>
+    <rfield>PAS.BUS.ID</rfield>
+    <rfield>PAS.TAG</rfield>
+    <rfield>PAS.QUOTE.ID</rfield>
+    <rfield>PAS.PU.TERM</rfield>
+    <rfield>PAS.DIRECT.LOAD.ZIP</rfield>
+    <rfield>PAS.DEPT.CODE</rfield>
+  </returnfields>
+</dataInput>
+]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="Request 14" id="246a9592-752a-4443-8f2f-9cafca883735"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="PASbyRefernce#" id="8d458d78-91a4-48ff-b44c-6159dc0b17a3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+	<programId>IDA200.XML</programId>
+	<Form>1</Form>
+	<fgInd>f</fgInd>
+	<file>PAS</file>
+	<action>retrieval</action>
+	<subAction>none</subAction>
+</hdr>
+<selection>
+	<field>
+		<name>PAS.PU.REFERENCE.ID</name>
+		<value>71802338</value>
+		<operator>EQ</operator>
+	</field>
+
+</selection>
+<returnfields>
+    <rfield>PAS.PU.REFERENCE.ID</rfield>
+    <rfield>PAS.PU.DT</rfield>
+    <rfield>PAS.PU.SHPR.NAME</rfield>
+    <rfield>PAS.STATUS.CODE</rfield>
+    <rfield>PAS.GROUP.ID</rfield>
+    <rfield>PAS.PU.PCS</rfield>
+    <rfield>PAS.PU.WGT</rfield>
+    <rfield>DATE</rfield>
+    <rfield>TIME</rfield>
+    <rfield>PAS.BUS.ID</rfield>
+    <rfield>PAS.TAG</rfield>
+    <rfield>PAS.QUOTE.ID</rfield>
+    <rfield>PAS.PU.TERM</rfield>
+    <rfield>PAS.DIRECT.LOAD.ZIP</rfield>
+    <rfield>PAS.DEPT.CODE</rfield>
+    <rfield>PAS.PU.MASTER.REF.ID</rfield>
+    <rfield>PAS.CONSG.NAME</rfield>
+    <rfield>PAS.DIRECT.LOAD.TERM</rfield>
+    <rfield>PAS.BUS.ACT.CD</rfield>
+    <rfield>PAS.TEXT_</rfield>
+    <rfield>PAS.SERVICE.TYPE</rfield>
+    <rfield>PAS.CONSG.CITY</rfield>
+    <rfield>PAS.CONSG.ST</rfield>
+    <rfield>PAS.REASON.TEXT</rfield>
+  </returnfields>
+</dataInput>
+]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="Copy of Request 14" id="1fece8ac-e210-4b2c-9d28-878721afaf11"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <form>1</form>
+    <fgInd>f</fgInd>
+    <file>EQP</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+    <format>CD</format>
+  </hdr>
+  <selection>
+  <field>
+    <name>EQP.TRIP.DEST.ORZ.TAG</name>
+    <value>X56</value>
+    <operator>eq</operator>
+  </field>
+  </selection>
+  <returnfields>
+    <rfield>EQP.UNIT.NBR</rfield>
+    <rfield>PRP.EXT.LNGTH</rfield>
+  </returnfields>
+  <join>
+      <file>
+         <name>IML</name>   
+         <fgInd>f</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.UNIT.NBR</srcfield>
+         <trgfield>IML.UNIT.NBR</trgfield>
+      </field>
+    <returnfields>
+      <rfield>IML.RPTG.RR.SCAC</rfield>
+      <rfield>IML.DEST.CITY</rfield>
+      <rfield>DATE</rfield>
+      <rfield>TIME</rfield>
+    </returnfields>
+  </join>
+   <join>
+    <file>
+      <name>PCM</name>
+      <fgInd>f</fgInd>
+    </file>
+    <field>
+      <srcfield>EQP.PCM.TAG</srcfield>
+      <trgfield>PCM.TAG</trgfield>
+    </field>
+    <returnfields>
+      <rfield>PCM.ORIG.ORZ.RFRNC.CD</rfield>
+      <rfield>PCM.STDT</rfield>
+      <rfield>PCM.START.TIME</rfield>
+    </returnfields>
+  </join>
+  </dataInput>
+]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="Join Counts" id="6052f407-6cb1-4bd8-9a00-801448cd4788"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d2204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <form>1</form>
+    <fgInd>f</fgInd>
+    <file>EQP</file>
+    <action>retrieval</action>
+    <subAction>joincount</subAction>
+  </hdr>
+  <selection>
+    <field>              
+      <name>EQP.TRIP.DEST.ORZ.TAG</name>
+      <operator>EQ</operator>
+      <value>X50</value>
+    </field>
+  </selection>
+  <returnfields>
+      <rfield>EQP.UNIT.NBR</rfield>
+      <rfield>PRP.EXT.LNGTH</rfield>
+      <rfield>EQP.ORIG.ORZ.TAG</rfield>
+      <rfield>EQP.DEST.ORZ.TAG</rfield>
+      <rfield>EQP.ACTVTY.STATUS</rfield>
+      <rfield>EQP.ACTL.CPCTY</rfield>
+      <rfield>EQP.NXT.STATUS.DT</rfield>
+      <rfield>EQP.NXT.STATUS.TIME</rfield>
+      <rfield>EQP.STATUS.DT</rfield>
+      <rfield>EQP.STATUS.TIME</rfield>
+</returnfields>
+  <join>
+      <file>
+                <name>IML</name>   
+         <fgInd>f</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.UNIT.NBR</srcfield>
+         <trgfield>IML.UNIT.NBR</trgfield>
+      </field>
+      <field>
+         <srcfield>EQP.RSPNSBL.BUS.SCAC</srcfield>
+         <trgfield>IML.RSPNSBL.BUS.SCAC</trgfield>
+      </field>
+      <returnfields>
+                <rfield>IML.RSPNSBL.BUS.SCAC</rfield>
+                <rfield>IML.DEST.CITY</rfield>
+      </returnfields>
+  </join>
+<join>
+      <file>
+                <name>PCM</name>
+         <fgInd>f</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.PCM.TAG</srcfield>
+         <trgfield>PCM.TAG</trgfield>
+      </field>
+      <returnfields>
+                <rfield>PCM.ORIG.ORZ.RFRNC.CD</rfield>
+                <rfield>PCM.STDT</rfield>
+                <rfield>PCM.ENDT</rfield>
+      </returnfields>
+  </join>
+  <join>
+      <file>
+                <name>WGP8GRP</name>      
+         <fgInd>g</fgInd>
+      </file>
+      <field>
+         <srcfield>EQP.TAG</srcfield>
+         <trgfield>TWG.TO.EQP.TAG</trgfield>
+      </field>
+      <returnfields>
+        <rfield>WGP.SRVC.IND</rfield>
+        <rfield>WGP.TTL.ACTL.WGT</rfield>
+      </returnfields>
+  </join>
+</dataInput>
+]]></con:request><con:credentials><con:username/><con:password/><con:domain/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="PASbyDate" id="94e9c800-8262-4933-9b69-fdbc65488b8b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>PAS</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>DATE</name>
+      <value>20150303</value>
+      <operator>EQ</operator>
+    </field>
+    <field>
+      <name>TIME</name>
+      <sValue>23560019</sValue>
+      <eValue>23595900</eValue>
+      <operator>NIRFT</operator>
+    </field>
+  </selection>
+  <returnfields>
+    <rfield>PAS.PU.REFERENCE.ID</rfield>
+    <rfield>PAS.STATUS.CODE</rfield>
+  </returnfields>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="Copy of PASbyDate" id="65f0b0b1-e3ce-404c-bba0-17c24871017b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>PAS</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>DATE</name>
+      <value>20141110</value>
+      <operator>EQ</operator>
+    </field>
+    <field>
+      <name>TIME</name>
+      <sValue>00000000</sValue>
+      <eValue>23590000</eValue>
+      <operator>NIRFT</operator>
+    </field>
+    <field>
+      <name>PAS.STATUS.CODE</name>
+      <value>A</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+  <returnfields>
+    <rfield>PAS.PU.MASTER.REF.ID</rfield>
+  </returnfields>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="getASDbyDate" id="c5abf56c-71be-4689-a086-5fd159e6cc5b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>GIF</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+  	<field>
+		<name>CREATE.DATE</name>
+		<value>20150217</value>
+		<operator>EQ</operator>
+	</field>
+  	<field>
+		<name>GIF.APPLCTN.ID</name>
+		<value>ASD.PROD</value>
+		<operator>EQ</operator>
+	</field>
+	  <field>
+		<name>GIF.ASD.SKEL.IND</name>
+		<value>Y</value>
+		<operator>EQ</operator>
+	</field>
+  </selection>
+  <returnfields>
+    <rfield>GIF.ID.NBR</rfield>
+      </returnfields>
+<join>
+    <file>
+      <name>WGPCGRP</name>
+      <fgInd>g</fgInd>
+    </file>
+    <field>
+      <srcfield>GIF.ID.NBR</srcfield>
+      <trgfield>WGP.ID.NBR</trgfield>
+    </field>
+    <returnfields>
+      <rfield>WGP.PU.SIGN.DT</rfield>
+      <rfield>WGP.ORIG.ORZ.TAG</rfield>
+      <rfield>WGP.PLANNED.DEST.ORZ.TAG</rfield>
+      <rfield>WGP.TTL.NBR.HNDLNG.UNITS</rfield>
+      <rfield>WGP.TTL.ACTL.WGT</rfield>
+      <rfield>WGP.SHP.TAG</rfield>
+    </returnfields>
+  </join>
+    <join>
+    <file>
+      <name>BSRCGRP</name>
+      <fgInd>g</fgInd>
+    </file>
+    <field>
+      <srcfield>WGP.SHP.TAG</srcfield>
+      <trgfield>SHP.TAG</trgfield>
+    </field>
+    <returnfields>
+      <rfield>SHP.BUS.ROLE</rfield>
+      <rfield>SHP.ZIP.RPRTD</rfield>
+      <rfield>SHP.NM.RPRTD</rfield>
+      <rfield>SHP.ZIP.RPRTD</rfield>
+    </returnfields>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="BSR" id="8d769792-8583-4dda-a4b2-4992d384f165"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>BSRCGRP</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+  	<field>
+		<name>SHP.TAG</name>
+		<value>2SHP1502160928003376</value>
+		<operator>EQ</operator>
+	</field>
+  </selection>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="GIF" id="265fc9e7-5263-4a01-a099-64dd06b4c44e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>f</fgInd>
+    <file>GIF</file>
+    <action>retrieval</action>
+    <subAction>join</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>GIF.ASD.SKEL.IND</name>
+      <value>Y</value>
+      <operator>EQ</operator>
+    </field>
+    <field>
+      <name>CREATE.DATE</name>
+      <value>20150220</value>
+      <operator>EQ</operator>
+    </field>
+    <field>
+      <name>CREATE.TIME</name>
+      <sValue>00000000</sValue>
+      <eValue>00010000</eValue>
+      <operator>NIRFT</operator>
+    </field>
+    <field>
+      <name>GIF.APPLCTN.ID</name>
+      <value>ASD.PROD</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+  <returnfields>
+    <rfield>GIF.ID.NBR</rfield>
+  </returnfields>
+  <join>
+    <file>
+      <name>WGPCGRP</name>
+      <fgInd>g</fgInd>
+    </file>
+    <field>
+      <srcfield>GIF.ID.NBR</srcfield>
+      <trgfield>WGP.ID.NBR</trgfield>
+    </field>
+    <returnfields>
+      <rfield>WGP.PU.SIGN.DT</rfield>
+      <rfield>WGP.ORIG.ORZ.TAG</rfield>
+      <rfield>WGP.PLANNED.DEST.ORZ.TAG</rfield>
+      <rfield>WGP.TTL.NBR.HNDLNG.UNITS</rfield>
+      <rfield>WGP.TTL.ACTL.WGT</rfield>
+      <rfield>WGP.SHP.TAG</rfield>
+    </returnfields>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="PASHGRP" id="6e639eb9-200d-463e-9036-b26c4b503365"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://m204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+	<programId>IDA200.XML</programId>
+	<Form>1</Form>
+	<fgInd>f</fgInd>
+	<file>PAS</file>
+	<action>retrieval</action>
+	<subAction>join</subAction>
+</hdr>
+<selection>
+	<field>
+		<name>PAS.PU.REFERENCE.ID</name>
+		<value>73840910</value>
+		<operator>EQ</operator>
+	</field>
+
+</selection>
+<returnfields>
+    <rfield>PAS.PU.REFERENCE.ID</rfield>
+    <rfield>PAS.PU.DT</rfield>
+    <rfield>PAS.PU.SHPR.NAME</rfield>
+    <rfield>PAS.STATUS.CODE</rfield>
+    <rfield>PAS.GROUP.ID</rfield>
+    <rfield>PAS.PU.PCS</rfield>
+    <rfield>PAS.PU.WGT</rfield>
+    <rfield>DATE</rfield>
+    <rfield>TIME</rfield>
+    <rfield>PAS.BUS.ID</rfield>
+    <rfield>PAS.TAG</rfield>
+    <rfield>PAS.QUOTE.ID</rfield>
+    <rfield>PAS.PU.TERM</rfield>
+    <rfield>PAS.DIRECT.LOAD.ZIP</rfield>
+    <rfield>PAS.DEPT.CODE</rfield>
+    <rfield>PAS.PU.MASTER.REF.ID</rfield>
+    <rfield>PAS.CONSG.NAME</rfield>
+    <rfield>PAS.DIRECT.LOAD.TERM</rfield>
+    <rfield>PAS.BUS.ACT.CD</rfield>
+    <rfield>PAS.TEXT_</rfield>
+    <rfield>PAS.SERVICE.TYPE</rfield>
+    <rfield>PAS.CONSG.CITY</rfield>
+    <rfield>PAS.CONSG.ST</rfield>
+    <rfield>PAS.REASON.TEXT</rfield>
+  </returnfields>
+<join>
+    <file>
+      <name>PASHGRP</name>
+      <fgInd>g</fgInd>
+    </file>
+    <field>
+      <srcfield>PAS.TAG</srcfield>
+      <trgfield>PAS.TAG</trgfield>
+    </field>
+    <returnfields>
+      <rfield>DATE</rfield>
+      <rfield>PAS.REASON.TEXT</rfield>
+      <rfield>TIME</rfield>
+    </returnfields>
+  </join>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="EQPSTAT" id="d77018b3-ed39-45e3-82ea-2c017c353ad2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://s1204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+<hdr>
+  <programId>IDA200.XML</programId>
+  <Form>1</Form>
+  <fgInd>f</fgInd>
+  <file>EQPSTAT</file>
+  <action>retrieval</action>
+  <subAction>none</subAction>
+</hdr>
+<selection>
+  <field>
+    <name>RECORD.KEY</name>
+    <value>201509231409482390000020302033</value>
+    <operator>eq</operator>
+  </field>
+   
+</selection>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="TWG" id="0a3166b7-aec6-4664-83b8-8e3c3e426704"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d1204-trust.ago.roadway.com/ida900?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<?xml version="1.0"?>
+<dataInput>
+  <hdr>
+    <programId>IDA200.XML</programId>
+    <Form>1</Form>
+    <fgInd>g</fgInd>
+    <file>TWG8GRP</file>
+    <action>retrieval</action>
+    <subAction>none</subAction>
+  </hdr>
+  <selection>
+    <field>
+      <name>TWG.WGP.TAG</name>
+      <value>2WGP1103201512069995</value>
+      <operator>EQ</operator>
+    </field>
+  </selection>
+</dataInput>
+]]></con:request><con:credentials><con:username/><con:password/><con:domain/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:call name="update EQP" id="ed39592d-7c5d-489e-97b9-9f79d2b9533f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://d1204-trust.ago.roadway.com/idu800?prmUser=CRMUSER</con:endpoint><con:request><![CDATA[<dataInput>
+  <uow>
+    <hdr>
+      <file>EQP</file>
+      <fgInd>f</fgInd>
+      <dts>20151104030435823</dts>
+      <subAction>change</subAction>
+      <jely>y</jely>
+    </hdr>
+    <selection>
+      <field>
+        <name>EQP.TAG</name>
+        <value>2EQP0902220554135632</value>
+        <operator>EQ</operator>
+      </field>
+      <field>
+        <name>RECTYPE</name>
+        <value>EQP.BASE</value>
+        <operator>EQ</operator>
+      </field>
+    </selection>
+    <update>
+      <updDesc>
+        <nValue>20151130</nValue>
+        <fieldname>DATE</fieldname>
+        <type>chField</type>
+      </updDesc>
+      <updDesc>
+        <nValue>16504612</nValue>
+        <type>chField</type>
+        <fieldname>TIME</fieldname>
+      </updDesc>
+    </update>
+  </uow>
+</dataInput>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="wsdl_getPackageInfo_Binder_getPackageVersions"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="83e4deb1-38b8-4fd5-9177-2b5359a53f9f"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:environmentSpec><con:entry environmentId="b587604f-2390-4e76-9383-bb8f6f17a944"><con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="6922de35-ae07-4611-8444-4f3641e453ae"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:operation>
